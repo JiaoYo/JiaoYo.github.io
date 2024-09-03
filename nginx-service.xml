@@ -1,0 +1,21 @@
+<service>
+  <!-- 唯一服务ID-->
+  <id>nginx</id>
+  <!-- 显示服务的名称 -->
+  <name>Nginx Service</name>
+  <!-- 服务描述 -->
+  <description>Nginx服务</description>
+  <!-- 日志路径 -->
+  <logpath>D:\nginx-1.27.1\logs\</logpath>
+  <!-- 日志模式 -->
+  <!-- <logmode>roll</logmode> -->
+  <log mode="roll-by-size">     
+    <sizeThreshold>10240</sizeThreshold>     
+    <keepFiles>8</keepFiles>   
+  </log>
+  <!-- 可执行文件的命令 -->
+  <executable>D:\nginx-1.27.1\nginx.exe</executable>
+  <!-- 停止可执行文件的命令 -->
+  <stopexecutable>D:\nginx-1.27.1\nginx.exe -s stop</stopexecutable>
+</service>
+
