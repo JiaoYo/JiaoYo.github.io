@@ -4,85 +4,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>0</title>
+  <title></title>
+  <style>
+    .container {
+      margin: 100px auto;
+      width: 650px;
+    }
+
+    label {
+      display: inline-block;
+      width: 100px;
+      font-size: 20px;
+      text-align: right;
+      margin-right: 20px;
+    }
+
+    input {
+      width: 500px;
+      height: 36px;
+      font-size: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    button {
+      width: 100px;
+      height: 36px;
+    }
+  </style>
 </head>
 
 <body>
-  <form id="myForm">
-    <label for="token">Token:</label>
-    <input type="text" id="ptoken" name="ptoken" value="f202f93f4b145aa389684f7510c9ee46" required>
-    <br><br>
+  <div class="container">
+    <form id="myForm">
+      <h2>配置信息</h2>
+      <label for="savePath">保存路径:</label>
+      <input type="text" class="form-control" id="savePath" name="savePath" value="/home/linkqi/efile" required>
+      <br><br>
+      <label for="saveBakPath">路径:</label>
+      <input type="text" class="form-control" id="saveBakPath" name="saveBakPath" value="/home/linkqi/efile-bak"
+        required>
+      <br><br>
 
-    <label for="password">密码:</label>
-    <input type="text" id="pwd" value="aa1bb98e86710ebfa1f5fbc48f3b5e5c" name="pwd" required>
-    <br><br>
+      <label for="token">Token:</label>
+      <input type="text" id="ptoken" name="ptoken" value="f202f93f4b145aa389684f7510c9ee46" required>
+      <br><br>
 
-    <label for="path">路径:</label>
-    <input type="text" id="savepath" name="savepath" value="C:\\Users\\lijf\\Desktop\\wea" required>
-    <br><br>
+      <label for="password">密码:</label>
+      <input type="text" id="pwd" value="aa1bb98e86710ebfa1f5fbc48f3b5e5c" name="pwd" required>
+      <br><br>
 
-    <button type="button" onclick="submitForm()">提交</button>
-  </form>
+      <label for="reqUrl">请求地址:</label>
+      <input type="text" class="form-control" id="reqUrl" name="reqUrl"
+        value="/tob-dsoe-mono/v1/v/linkqi-2/23s2/csv-data" required>
+      <br><br>
 
-  <form id="myForm1">
-    <label for="text">命令:</label>
-    <input type="text" id="text" name="text" required>
-    <br><br>
+      <button type="button" onclick="submitForm()">提交</button>
+    </form>
 
-    <button type="button" onclick="submitForm1()">发送</button>
-  </form>
+  </div>
 
   <script>
-    async function submitForm() {
+    async function submitForm () {
       const form = document.getElementById('myForm');
       const formData = new FormData(form);
 
       const data = {
+        savePath: formData.get('savePath'),
+        saveBakPath: formData.get('saveBakPath'),
         ptoken: formData.get('ptoken'),
         pwd: formData.get('pwd'),
-        savepath: formData.get('savepath')
+        reqUrl: formData.get('reqUrl')
       };
-
       try {
-        const response = await fetch('http://127.0.0.1:8018/weather/updateYml.do', {
+        const response = await fetch('http://127.0.0.1:8018/weather/updateSite.do', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify(data)
         });
-
-        const result = await response.json();
-        console.log(result);
+        const result = await response.text();
         alert(result);
       } catch (error) {
-        console.error('Error:', error);
+        console.error('错误');
       }
     }
-
-    async function submitForm1() {
-      const form = document.getElementById('myForm1');
-      const formData = new FormData(form);
-      const data = {
-        text: formData.get('text')
-      };
-
-      try {
-        const response = await fetch('http://127.0.0.1:8018/weather/updatecmd.do', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        });
-
-        const result = await response.json();
-        console.log(result);
-        alert(result);
-      } catch (error) {
-        console.error('Error:', error);
-      }
-    }
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const fileName = window.location.pathname.split('/').pop().split('.')[0];
+      document.title = fileName.replace(/-/g, ' '); // 替换连字符为空格
+    });
   </script>
 </body>
 
