@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0</title>
+</head>
+
+<body>
+  <form id="myForm">
+    <label for="token">Token:</label>
+    <input type="text" id="ptoken" name="ptoken" value="f202f93f4b145aa389684f7510c9ee46" required>
+    <br><br>
+
+    <label for="password">密码:</label>
+    <input type="text" id="pwd" value="aa1bb98e86710ebfa1f5fbc48f3b5e5c" name="pwd" required>
+    <br><br>
+
+    <label for="path">路径:</label>
+    <input type="text" id="savepath" name="savepath" value="C:\\Users\\lijf\\Desktop\\wea" required>
+    <br><br>
+
+    <button type="button" onclick="submitForm()">提交</button>
+  </form>
+
+  <form id="myForm1">
+    <label for="text">命令:</label>
+    <input type="text" id="text" name="text" required>
+    <br><br>
+
+    <button type="button" onclick="submitForm1()">发送</button>
+  </form>
+
+  <script>
+    async function submitForm() {
+      const form = document.getElementById('myForm');
+      const formData = new FormData(form);
+
+      const data = {
+        ptoken: formData.get('ptoken'),
+        pwd: formData.get('pwd'),
+        savepath: formData.get('savepath')
+      };
+
+      try {
+        const response = await fetch('http://127.0.0.1:8018/weather/updateYml.do', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+        console.log(result);
+        alert(result);
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+
+    async function submitForm1() {
+      const form = document.getElementById('myForm1');
+      const formData = new FormData(form);
+      const data = {
+        text: formData.get('text')
+      };
+
+      try {
+        const response = await fetch('http://127.0.0.1:8018/weather/updatecmd.do', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+        console.log(result);
+        alert(result);
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
+  </script>
+</body>
+
+</html>
