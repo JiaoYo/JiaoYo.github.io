@@ -119,20 +119,11 @@
         <button type="button" onclick="generateCommand()">发送</button>
       </form>
     </div>
-    <div>
-      href : <span id="ceshi"></span>
-      host : <span id="host"></span>
-      origin : <span id="origin"></span>
-    </div>
   </div>
 
   <script>
     /* 请求地址 */
     const baseUrl = `http://${window.location.hostname}:8018`|| 'http://127.0.0.1:8018'
-    console.log(window.location);
-    document.querySelector('#ceshi').innerText = window.location.href
-    document.querySelector('#host').innerText = window.location.host
-    document.querySelector('#origin').innerText = window.location.origin
     
     /* 获取参数 */
     async function getParams () {
