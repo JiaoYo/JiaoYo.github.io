@@ -15,6 +15,11 @@
       margin-bottom: 20px;
     }
 
+    .request .requestbtn {
+      display: flex;
+      justify-content: center;
+    }
+
     .container {
       margin: 20px auto;
       width: 650px;
@@ -70,10 +75,15 @@
     <div class="request">
       <div>
         最近一次请求操作的时间：<span id="updateTime"></span>
+      </div>
+      <div>
         请求结果：<span id="updateStatus"></span>
       </div>
       <div>
-        下一次请求操作的时刻：<span id="nextTime"></span>
+        下一次请求操作的时间：<span id="nextTime"></span>
+      </div>
+      <div class="requestbtn">
+        <button type="button" onclick="getTime()">刷新</button>
       </div>
     </div>
 
@@ -94,6 +104,7 @@
       <label for="reqUrl">请求地址：</label>
       <input type="text" class="form-control" id="reqUrl" name="reqUrl" value="" required>
       <br><br>
+      <button type="button" onclick="getParams()">刷新</button>
       <button type="button" onclick="submitForm()">提交</button>
     </form>
 
@@ -112,8 +123,9 @@
 
   <script>
     /* 请求地址 */
-    const baseUrl = 'http://172.20.1.104:8018'
-
+    const baseUrl = 'http://127.0.0.1:8018'
+    console.log(window.location);
+    
     /* 获取参数 */
     async function getParams () {
       const response = await fetch(baseUrl + '/weather/getSite.do', {
