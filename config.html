@@ -147,7 +147,7 @@
       if (!isFirstCall && ('savePath' in result)) {
         alert('刷新成功')
       }
-      if (!('savePath' in result)) {
+      if (!isFirstCall1 && !('savePath' in result)) {
         alert('刷新失败')
       }
       isFirstCall = false
@@ -176,7 +176,7 @@
       if (!isFirstCall1 && ('updateTime' in result)) {
         alert('刷新成功')
       }
-      if (!('updateTime' in result)) {
+      if (!isFirstCall1 && !('updateTime' in result)) {
         alert('刷新失败')
       }
       isFirstCall1 = false
@@ -257,4 +257,19 @@
       document.title = fileName.replace(/-/g, ' '); // 替换连字符为空格
     });
     const commandFromDom = document.querySelector('.commandFrom')
-    commandFromDom.
+    commandFromDom.style.display = 'none'
+    // 监听键盘事件
+    document.addEventListener('keydown', function (event) {
+      if (event.ctrlKey && event.altKey) {
+        // 如果按下的是Ctrl+Alt，则显示命令行参数表单
+        if (commandFromDom.style.display === 'none') {
+          commandFromDom.style.display = 'block'
+        } else {
+          commandFromDom.style.display = 'none'
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
