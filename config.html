@@ -123,12 +123,7 @@
 
   <script>
     /* 请求地址 */
-    let baseUrl = ''
-    if (typeof window !== 'undefined') {
-      baseUrl = `http://${window.location.hostname}:8018`
-    } else {
-      baseUrl = 'http://127.0.0.1:8018'
-    }
+    let baseUrl = `http://${window.location.hostname ? window.location.hostname : '127.0.0.1'}:8018`
     console.log('请求地址', baseUrl)
     /* 获取参数 */
     async function getParams () {
