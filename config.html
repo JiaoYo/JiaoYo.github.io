@@ -129,7 +129,7 @@
     } else {
       baseUrl = 'http://127.0.0.1:8018'
     }
-
+    console.log('请求地址', baseUrl)
     /* 获取参数 */
     async function getParams () {
       const response = await fetch(baseUrl + '/weather/getSite.do', {
