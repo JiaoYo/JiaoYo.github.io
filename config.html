@@ -126,6 +126,7 @@
     let baseUrl = `http://${window.location.hostname ? window.location.hostname : '127.0.0.1'}:8018`
     console.log('请求地址', baseUrl)
     /* 获取参数 */
+    let isFirstCall = true;
     async function getParams () {
       const response = await fetch(baseUrl + '/weather/getSite.do', {
         method: 'get',
@@ -143,10 +144,18 @@
         form.pwd.value = result.pwd || '';
         form.reqUrl.value = result.reqUrl || '';
       }
+      if (!isFirstCall && ('savePath' in result)) {
+        alert('刷新成功')
+      }
+      if (!('savePath' in result)) {
+        alert('刷新失败')
+      }
+      isFirstCall = false
     }
     getParams()
 
     /* 获取操作时间 */
+    let isFirstCall1 = true;
     async function getTime () {
       const resultMap = {
         0: '成功',
@@ -164,6 +173,13 @@
       document.getElementById('updateTime').innerText = result.updateTime || ''
       document.getElementById('nextTime').innerText = result.nextTime || ''
       document.getElementById('updateStatus').innerText = resultMap[result.updateStatus] || ''
+      if (!isFirstCall1 && ('updateTime' in result)) {
+        alert('刷新成功')
+      }
+      if (!('updateTime' in result)) {
+        alert('刷新失败')
+      }
+      isFirstCall1 = false
     }
     getTime()
 
@@ -241,19 +257,4 @@
       document.title = fileName.replace(/-/g, ' '); // 替换连字符为空格
     });
     const commandFromDom = document.querySelector('.commandFrom')
-    commandFromDom.style.display = 'none'
-    // 监听键盘事件
-    document.addEventListener('keydown', function (event) {
-      if (event.ctrlKey && event.altKey) {
-        // 如果按下的是Ctrl+Alt，则显示命令行参数表单
-        if (commandFromDom.style.display === 'none') {
-          commandFromDom.style.display = 'block'
-        } else {
-          commandFromDom.style.display = 'none'
-        }
-      }
-    });
-  </script>
-</body>
-
-</html>
+    commandFromDom.
