@@ -125,9 +125,9 @@
     /* 请求地址 */
     let baseUrl = ''
     if (typeof window !== 'undefined') {
-      const baseUrl = `http://${window.location.hostname}:8018`
+      baseUrl = `http://${window.location.hostname}:8018`
     } else {
-      const baseUrl = 'http://127.0.0.1:8018'
+      baseUrl = 'http://127.0.0.1:8018'
     }
 
     /* 获取参数 */
