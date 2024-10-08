@@ -1,1 +1,0 @@
-import{a1 as o}from"./index-DLNUCcPL.js";const s={1:"common.yesOrNo.yes",0:"common.yesOrNo.no"};o(s);const t={0:"成功，无错误",1:"常规错误",2:"缺少关键的物模型标识",3:"数据采集异常",4:"场站配置为空",5:"找不到系统测点",6:"没有天气预报数据",7:"错误的装机容量",8:"失败"},r=o(t);export{r as c,s as y};
