@@ -1190,6 +1190,14 @@ li.ant-select-tree-treenode-disabled>.ant-select-tree-node-content-wrapper,li.an
 .vxe-switch .vxe-switch--label{color:#fff}
 .vxe-switch .vxe-switch--icon{background-color:#fff}
 .vxe-pulldown--wrapper{background-color:#fff}
+.beauty-scroll[data-v-01958d16]{scrollbar-color:#8bc63e #f5faeb}
+.beauty-scroll[data-v-01958d16]::-webkit-scrollbar-thumb{background:#8bc63e}
+.beauty-scroll[data-v-01958d16]::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 1px rgba(0,0,0,0);background:#ddedbb}
+.disabled[data-v-01958d16]{color:rgba(0,0,0,.25)}
+#nprogress .bar[data-v-01958d16]{background:#8bc63e}
+#nprogress .peg[data-v-01958d16]{-webkit-box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e;box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e}
+#nprogress .spinner-icon[data-v-01958d16]{border-top-color:#8bc63e;border-left-color:#8bc63e}
+.videoCamera[data-v-01958d16]:hover{color:#fff}
 .beauty-scroll[data-v-f11e6166]{scrollbar-color:#8bc63e #f5faeb}
 .beauty-scroll[data-v-f11e6166]::-webkit-scrollbar-thumb{background:#8bc63e}
 .beauty-scroll[data-v-f11e6166]::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 1px rgba(0,0,0,0);background:#ddedbb}
@@ -1236,14 +1244,6 @@ li.ant-select-tree-treenode-disabled>.ant-select-tree-node-content-wrapper,li.an
 #nprogress .bar[data-v-55b556cc]{background:#8bc63e}
 #nprogress .peg[data-v-55b556cc]{-webkit-box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e;box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e}
 #nprogress .spinner-icon[data-v-55b556cc]{border-top-color:#8bc63e;border-left-color:#8bc63e}
-.beauty-scroll[data-v-52823ad8]{scrollbar-color:#8bc63e #f5faeb}
-.beauty-scroll[data-v-52823ad8]::-webkit-scrollbar-thumb{background:#8bc63e}
-.beauty-scroll[data-v-52823ad8]::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 1px rgba(0,0,0,0);background:#ddedbb}
-.disabled[data-v-52823ad8]{color:rgba(0,0,0,.25)}
-#nprogress .bar[data-v-52823ad8]{background:#8bc63e}
-#nprogress .peg[data-v-52823ad8]{-webkit-box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e;box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e}
-#nprogress .spinner-icon[data-v-52823ad8]{border-top-color:#8bc63e;border-left-color:#8bc63e}
-.videoCamera[data-v-52823ad8]:hover{color:#fff}
 .beauty-scroll[data-v-e4200ab8]{scrollbar-color:#8bc63e #f5faeb}
 .beauty-scroll[data-v-e4200ab8]::-webkit-scrollbar-thumb{background:#8bc63e}
 .beauty-scroll[data-v-e4200ab8]::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 1px rgba(0,0,0,0);background:#ddedbb}
