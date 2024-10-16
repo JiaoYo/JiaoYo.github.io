@@ -1190,13 +1190,6 @@ li.ant-select-tree-treenode-disabled>.ant-select-tree-node-content-wrapper,li.an
 .vxe-switch .vxe-switch--label{color:#fff}
 .vxe-switch .vxe-switch--icon{background-color:#fff}
 .vxe-pulldown--wrapper{background-color:#fff}
-.beauty-scroll[data-v-0e283bb8]{scrollbar-color:#8bc63e #f5faeb}
-.beauty-scroll[data-v-0e283bb8]::-webkit-scrollbar-thumb{background:#8bc63e}
-.beauty-scroll[data-v-0e283bb8]::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 1px rgba(0,0,0,0);background:#ddedbb}
-.disabled[data-v-0e283bb8]{color:rgba(0,0,0,.25)}
-#nprogress .bar[data-v-0e283bb8]{background:#8bc63e}
-#nprogress .peg[data-v-0e283bb8]{-webkit-box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e;box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e}
-#nprogress .spinner-icon[data-v-0e283bb8]{border-top-color:#8bc63e;border-left-color:#8bc63e}
 .project-list .project-item .group{color:rgba(0,0,0,.65)}
 .project-list .project-item .group:hover{color:#8bc63e}
 .project-list .project-item .datetime{color:rgba(0,0,0,.45)}
@@ -1298,6 +1291,13 @@ li.ant-select-tree-treenode-disabled>.ant-select-tree-node-content-wrapper,li.an
 #nprogress .bar[data-v-12eadad9]{background:#8bc63e}
 #nprogress .peg[data-v-12eadad9]{-webkit-box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e;box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e}
 #nprogress .spinner-icon[data-v-12eadad9]{border-top-color:#8bc63e;border-left-color:#8bc63e}
+.beauty-scroll[data-v-a4ca47a0]{scrollbar-color:#8bc63e #f5faeb}
+.beauty-scroll[data-v-a4ca47a0]::-webkit-scrollbar-thumb{background:#8bc63e}
+.beauty-scroll[data-v-a4ca47a0]::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 1px rgba(0,0,0,0);background:#ddedbb}
+.disabled[data-v-a4ca47a0]{color:rgba(0,0,0,.25)}
+#nprogress .bar[data-v-a4ca47a0]{background:#8bc63e}
+#nprogress .peg[data-v-a4ca47a0]{-webkit-box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e;box-shadow:0 0 10px #8bc63e,0 0 5px #8bc63e}
+#nprogress .spinner-icon[data-v-a4ca47a0]{border-top-color:#8bc63e;border-left-color:#8bc63e}
 .beauty-scroll[data-v-efe71516]{scrollbar-color:#8bc63e #f5faeb}
 .beauty-scroll[data-v-efe71516]::-webkit-scrollbar-thumb{background:#8bc63e}
 .beauty-scroll[data-v-efe71516]::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 1px rgba(0,0,0,0);background:#ddedbb}
