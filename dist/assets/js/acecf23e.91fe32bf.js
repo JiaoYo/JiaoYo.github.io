@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkyma_16_doc=self.webpackChunkyma_16_doc||[]).push([[1903],{1912:o=>{o.exports=JSON.parse('{"blogBasePath":"/tools_docs/blog","blogTitle":"Blog","authorsListPath":"/tools_docs/blog/authors"}')}}]);
