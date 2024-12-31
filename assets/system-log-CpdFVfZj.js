@@ -1,0 +1,1 @@
+import{bh as o}from"./index-T9gyDO4y.js";function r(t){return o({url:"/log/LoginPage.do",method:"get",params:t})}function g(t){return o({url:"/log/OperationPage.do",method:"get",params:t})}function n(t){return o({url:"/log/ErrorPage.do",method:"get",params:t})}export{r as a,g as b,n as f};
