@@ -152,9 +152,14 @@ body {
     /* background: #160042!important; */
     /* border: 1px solid #001428!important; */
 }
-.n-base-select-menu .n-scrollbar ,.n-cascader-menu{
+.n-base-select-menu .n-scrollbar ,.n-cascader-menu {
   border: 1px solid rgb(20, 82, 197) !important;
 
+}
+.n-date-panel {
+  border: 1px solid rgb(20, 82, 197) !important;
+  overflow: auto !important;
+  
 }
 .n-alert-body__title {
     color: #fff !important;
