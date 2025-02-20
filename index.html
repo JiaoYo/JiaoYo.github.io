@@ -1,49 +1,131 @@
-<!doctype html>
-<html lang="zh-cmn-Hans">
-    <head>
-        <meta charset="UTF-8" />
-        <!-- <link rel="icon" href="/favicon.svg" /> -->
-        <link rel="icon" href="/assets/hookwe-5sJDzaAQ.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>日志审计系统</title>
-        <style>
-            .n-menu--vertical {
-                height: calc(100vh - 60px - 60px);
-                overflow-y: auto;
-            }
+<!DOCTYPE html><html lang=en class=beauty-scroll><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/linkqi.png><title>Admin</title><style>/* .fixed-header {
+            z-index: 999999 !important;
+        } */
 
-            .n-menu--vertical::-webkit-scrollbar {
-                width: 0;
-            }
+        .ant-layout-header {
+            height: 45px !important;
+            line-height: 45px !important;
+        }
 
-            /* 强制覆盖 autofill 背景和光标颜色 */
-            input:-webkit-autofill,
-            input:-webkit-autofill:hover,
-            input:-webkit-autofill:focus,
-            input:-webkit-autofill:active {
-                -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
-                -webkit-text-fill-color: #000;
-                -webkit-transition-delay: 99999s;
-                -webkit-transition:
-                    background-color 99999s ease-out,
-                    color 99999s ease-out !important;
-            }
+        .ant-card-head-wrapper {
+            height: 40px !important;
+            line-height: 1 !important;
+        }
 
-            /* input:-webkit-autofill,
-            input:-webkit-autofill:hover,
-            input:-webkit-autofill:focus,
-            input:-webkit-autofill:active {
-                -webkit-transition:
-                    background-color 99999s ease-out,
-                    color 99999s ease-out !important;
-            } */
-        </style>
-        <script src="decimal.js"></script>
-      <script type="module" crossorigin src="/assets/index-bmrF5t8f.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-Bim8NS5_.css">
-    </head>
+        .ant-menu-item {
+            margin: 0 !important;
+        }
 
-    <body>
-        <div id="app"></div>
-    </body>
-</html>
+        .redDiv {
+            width: 15px;
+            height: 15px;
+            margin: 0 auto;
+            background: #f00;
+            border-radius: 50%;
+        }
+
+        .greenDiv {
+            width: 15px;
+            height: 15px;
+            margin: 0 auto;
+            background: #0f0;
+            border-radius: 50%;
+        }
+
+        .standbyDiv {
+            width: 15px;
+            height: 15px;
+            margin: 0 auto;
+            background: #f90;
+            border-radius: 50%;
+        }
+
+        .communicationInterruptionDiv {
+            width: 15px;
+            height: 15px;
+            margin: 0 auto;
+            background: #FF00BE;
+            border-radius: 50%;
+        }
+
+        .offlineDiv {
+            width: 15px;
+            height: 15px;
+            margin: 0 auto;
+            background: #999;
+            border-radius: 50%;
+        }
+
+        .unknownDiv {
+            width: 15px;
+            height: 15px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 50%;
+        }
+
+        /*滚动条整体部分*/
+        .mytable-scrollbar ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        /*滚动条的轨道*/
+        .mytable-scrollbar ::-webkit-scrollbar-track {
+            background-color: #FFFFFF;
+        }
+
+        /*滚动条里面的小方块，能向上向下移动*/
+        .mytable-scrollbar ::-webkit-scrollbar-thumb {
+            background-color: #bfbfbf;
+            border-radius: 5px;
+            border: 1px solid #F1F1F1;
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        }
+
+        .mytable-scrollbar ::-webkit-scrollbar-thumb:hover {
+            background-color: #A8A8A8;
+        }
+
+        .mytable-scrollbar ::-webkit-scrollbar-thumb:active {
+            background-color: #787878;
+        }
+
+        /*边角，即两个滚动条的交汇处*/
+        .mytable-scrollbar ::-webkit-scrollbar-corner {
+            background-color: #FFFFFF;
+        }
+
+        .vxe-pager--sizes {
+            width: 10em !important;
+            max-width: 10em !important;
+        }
+
+        .ant-notification {
+            top: 60px !important;
+            height: 90vh !important;
+            overflow-y: auto !important;
+            /* height: 95vh !important;
+            overflow-y: auto !important; */
+        }
+
+        .ant-notification::-webkit-scrollbar {
+            display: none !important;
+        }
+
+        .ant-message-custom-content {
+            display: inline-block !important;
+            /* display: flex !important; */
+            /* align-items: center !important; */
+        }
+
+        .ant-message-custom-content div {
+            display: inline-block !important;
+            text-align: left !important;
+        }
+
+        .ant-message-custom-content {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }</style><link href=/assets/app.d84fc234.css rel=stylesheet></head><body><noscript><strong>We're sorry but vue-antd-admin doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=popContainer class=beauty-scroll style="height: 100vh; overflow-y: auto"><div id=app></div></div><script src=/assets/app.d84fc234.js></script></body></html>
