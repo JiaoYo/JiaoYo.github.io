@@ -371,10 +371,10 @@ aside {
     color: #fff !important;
 }
 
-.n-message {
+/* .n-message {
     background: #001428 !important;
     box-shadow: 0 0 8px 8px rgba(20, 82, 197, 0.2);
-}
+} */
 
 .n-checkbox-icon {
     --n-color: #fff !important;
