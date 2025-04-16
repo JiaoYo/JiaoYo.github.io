@@ -1,0 +1,1023 @@
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>告白申请</title>
+  <style>
+    body {
+      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #333;
+    }
+
+    .window {
+      width: 400px;
+      background-color: #f3f3f3;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .title-bar {
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      background-color: #e5e5e5;
+      border-bottom: 1px solid #d0d0d0;
+    }
+
+    .buttons {
+      display: flex;
+      margin-right: 15px;
+    }
+
+    .button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .red {
+      background-color: #ff5f57;
+    }
+
+    .yellow {
+      background-color: #febc2e;
+    }
+
+    .green {
+      background-color: #28c840;
+    }
+
+    .title {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 14px;
+      color: #4d4d4d;
+    }
+
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .message {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .emoji {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto 30px;
+      position: relative;
+    }
+
+    .emoji-circle {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(145deg, #ffafd7, #a5d6ff);
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .emoji-eyes {
+      position: relative;
+      top: 25%;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 15px;
+    }
+
+    .emoji-eye {
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .emoji-pupil {
+      width: 14px;
+      height: 14px;
+      background-color: #4e342e;
+      border-radius: 50%;
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      transition: all 0.1s ease;
+    }
+
+    .emoji-pupil::after {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background-color: white;
+      border-radius: 50%;
+      top: 2px;
+      left: 2px;
+    }
+
+    .emoji-blush {
+      position: absolute;
+      width: 20px;
+      height: 10px;
+      background-color: #ff8dab;
+      border-radius: 50%;
+      opacity: 0.6;
+      top: 42%;
+    }
+
+    .emoji-blush.left {
+      left: 18%;
+    }
+
+    .emoji-blush.right {
+      right: 18%;
+    }
+
+    .emoji-mouth {
+      position: absolute;
+      width: 60px;
+      height: 40px;
+      background-color: #ff5b79;
+      border-radius: 50% 50% 50% 50% / 80% 80% 20% 20%;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+      box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1) inset;
+    }
+
+    .emoji-tooth {
+      width: 10px;
+      height: 8px;
+      background-color: white;
+      position: absolute;
+      top: 5px;
+      left: 25px;
+      border-radius: 2px;
+    }
+
+    .emoji-tongue {
+      width: 30px;
+      height: 20px;
+      background-color: #ff8fab;
+      border-radius: 15px 15px 0 0;
+      position: absolute;
+      bottom: -5px;
+      left: 15px;
+    }
+
+    .emoji-ears {
+      position: absolute;
+      width: 100%;
+      top: -5px;
+      left: 0;
+    }
+
+    .emoji-ear {
+      width: 20px;
+      height: 20px;
+      background-color: #ffafd7;
+      border-radius: 50%;
+      position: absolute;
+      top: 15px;
+    }
+
+    .emoji-ear.left {
+      left: 5px;
+      transform: rotate(-30deg);
+    }
+
+    .emoji-ear.right {
+      right: 5px;
+      transform: rotate(30deg);
+    }
+
+    .sparkles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .sparkle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #ffef80;
+      border-radius: 50%;
+      opacity: 0;
+      animation: twinkle 3s infinite;
+    }
+
+    .sparkle:nth-child(1) {
+      top: 10%;
+      left: 10%;
+      animation-delay: 0s;
+    }
+
+    .sparkle:nth-child(2) {
+      top: 20%;
+      right: 10%;
+      animation-delay: 0.4s;
+    }
+
+    .sparkle:nth-child(3) {
+      bottom: 15%;
+      left: 15%;
+      animation-delay: 0.8s;
+    }
+
+    .sparkle:nth-child(4) {
+      bottom: 10%;
+      right: 15%;
+      animation-delay: 1.2s;
+    }
+
+    @keyframes twinkle {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      50% {
+        transform: scale(1);
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+
+    .emoji-blink {
+      animation: blink 4s infinite;
+    }
+
+    @keyframes blink {
+
+      0%,
+      96%,
+      98% {
+        transform: scaleY(1);
+      }
+
+      97% {
+        transform: scaleY(0.1);
+      }
+    }
+
+    .buttons-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 0 20px 20px;
+    }
+
+    .action-button {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .accept {
+      background-color: #7cb342;
+    }
+
+    .reject {
+      background-color: #e53935;
+    }
+
+    .success-card {
+      background-color: #fff6f8;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      display: none;
+      position: relative;
+      box-shadow: 0 5px 20px rgba(255, 105, 180, 0.3);
+      transform: scale(0.5);
+      opacity: 0;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      overflow: hidden;
+      z-index: 50;
+    }
+
+    .success-card.active {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .success-title {
+      color: #ff3e6f;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .success-message {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #ff6b99;
+    }
+
+    .heart {
+      color: #e53935;
+      font-size: 28px;
+      position: relative;
+      display: inline-block;
+      animation: heartbeat 1s infinite;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+
+      25% {
+        transform: scale(1.1);
+      }
+
+      50% {
+        transform: scale(1);
+      }
+
+      75% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .confetti-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 100;
+      overflow: hidden;
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      opacity: 0;
+    }
+
+    .flying-hearts {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 20;
+    }
+
+    .flying-heart {
+      position: absolute;
+      font-size: 20px;
+      animation: flyUp 4s linear forwards;
+      color: #ff5b79;
+      opacity: 0;
+    }
+
+    @keyframes flyUp {
+      0% {
+        transform: translateY(100px) rotate(0deg);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .success-firework {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      box-shadow: 0 0 5px 1px;
+      animation: explode 1s ease-out forwards;
+    }
+
+    @keyframes explode {
+      0% {
+        transform: scale(0);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(20);
+        opacity: 0;
+      }
+    }
+
+    .celebrate-text {
+      position: absolute;
+      font-weight: bold;
+      color: #ff3e6f;
+      opacity: 0;
+      animation: fadeInOut 3s ease-in-out forwards;
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-10deg);
+      }
+
+      20% {
+        opacity: 1;
+        transform: scale(1.2) rotate(5deg);
+      }
+
+      80% {
+        opacity: 1;
+        transform: scale(1.2) rotate(-5deg);
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(0.5) rotate(10deg);
+      }
+    }
+
+    .sweet-photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 10px auto;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23FFD1DC"/><circle cx="50" cy="40" r="20" fill="%23FFFFFF"/><circle cx="43" cy="35" r="3" fill="%23000000"/><circle cx="57" cy="35" r="3" fill="%23000000"/><path d="M 40 50 Q 50 60 60 50" stroke="%23FF5B79" stroke-width="2" fill="none"/><path d="M 30 25 Q 40 15 50 25" stroke="%23FF5B79" stroke-width="2" fill="none"/><path d="M 50 25 Q 60 15 70 25" stroke="%23FF5B79" stroke-width="2" fill="none"/></svg>');
+      background-size: cover;
+      display: none;
+      animation: spin 1s ease-out;
+      box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+    }
+
+    @keyframes spin {
+      0% {
+        transform: scale(0) rotate(0deg);
+      }
+
+      100% {
+        transform: scale(1) rotate(360deg);
+      }
+    }
+
+    .balloon-container {
+      position: absolute;
+      bottom: -50px;
+      width: 100%;
+      height: 150px;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .balloon {
+      position: absolute;
+      width: 30px;
+      height: 35px;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      animation: floatUp 10s linear forwards;
+      bottom: 0;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      100% {
+        transform: translateY(-200px) rotate(20deg);
+        opacity: 0;
+      }
+    }
+
+    .success-button {
+      background-color: #ff3e6f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 3px 10px rgba(255, 62, 111, 0.3);
+      transition: all 0.3s;
+      display: none;
+    }
+
+    .success-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(255, 62, 111, 0.4);
+    }
+
+    .sweet-message {
+      position: absolute;
+      color: #e53935;
+      font-weight: bold;
+      font-size: 18px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 8px 15px;
+      border-radius: 20px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+      animation: fadeOut 2s forwards;
+      z-index: 100;
+    }
+
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+
+      70% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="window">
+    <div class="title-bar">
+      <div class="buttons">
+        <div class="button red"></div>
+        <div class="button green"></div>
+        <div class="button yellow"></div>
+      </div>
+      <div class="title">梦梦同学</div>
+    </div>
+    <div class="content">
+      <div class="message">对方向您发起了一条告白申请~</div>
+      <div class="emoji" id="emoji">
+        <div class="emoji-circle">
+          <div class="emoji-ears">
+            <div class="emoji-ear left"></div>
+            <div class="emoji-ear right"></div>
+          </div>
+          <div class="emoji-eyes">
+            <div class="emoji-eye emoji-blink">
+              <div class="emoji-pupil" id="left-pupil" style="transform: translate(6px, -6px);"></div>
+            </div>
+            <div class="emoji-eye emoji-blink">
+              <div class="emoji-pupil" id="right-pupil" style="transform: translate(6px, -6px);"></div>
+            </div>
+          </div>
+          <div class="emoji-blush left"></div>
+          <div class="emoji-blush right"></div>
+          <div class="emoji-mouth">
+            <div class="emoji-tooth"></div>
+            <div class="emoji-tongue"></div>
+          </div>
+          <div class="sparkles">
+            <div class="sparkle"></div>
+            <div class="sparkle"></div>
+            <div class="sparkle"></div>
+            <div class="sparkle"></div>
+          </div>
+        </div>
+        <div class="success-card" id="success-card">
+          <div class="success-title">恭喜！</div>
+          <div class="success-message">你有对象啦</div>
+          <div class="heart">❤️</div>
+          <div class="sweet-photo" id="sweet-photo"></div>
+          <button class="success-button" id="celebrate-btn">庆祝一下</button>
+          <div class="flying-hearts" id="flying-hearts"></div>
+        </div>
+      </div>
+      <div class="buttons-container">
+        <button class="action-button accept" id="accept-btn">接受</button>
+        <button class="action-button reject" id="reject-btn">拒绝</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 定义甜蜜的文字数组
+    const sweetMessages = [
+      "真的不再考虑一下吗？",
+      "我会对你很好的~",
+      "给我一次机会吧！",
+      "你是我的唯一",
+      "我们很合适的！",
+      "没有我你会后悔的~",
+      "不要拒绝这么好的我呀",
+      "爱你一万年！",
+      "做我的人好不好",
+      "我会一直陪伴你",
+      "你的笑容是我的阳光",
+      "余生请多指教",
+      "我可以一直等你",
+      "你就是我的命中注定",
+      "我想牵你的手到白头",
+      "和我在一起吧",
+      "你是我不能说的秘密",
+      "我的心里只有你",
+      "你的眼睛真好看",
+      "我喜欢你很久了",
+      "做我的小星星好吗",
+      "我会每天都给你做早餐",
+      "我会记得你所有的小习惯",
+      "想和你一起看日出日落",
+      "你是我最美的风景",
+      "一辈子只爱你一个人",
+      "我会努力成为更好的人",
+      "愿意给我一个机会吗",
+      "想要和你慢慢变老",
+      "我会珍惜你的每一刻",
+      "你的开心是我最大的幸福",
+      "想每天都能看见你",
+      "我的心跳为你加速",
+      "别让我等太久好吗",
+      "你是我生命中的奇迹",
+      "想和你一起做很多事",
+      "你给我的感觉很特别",
+      "我的未来里必须有你",
+      "想和你看遍世界的美景",
+      "和你在一起的时光都很珍贵",
+      "我已经准备好爱你了",
+      "不要离开我的世界",
+      "想要给你最好的自己",
+      "你是我心中最柔软的地方",
+      "我的心已经被你占满了",
+      "和我一起创造美好回忆吧",
+      "想和你手牵手走过春夏秋冬",
+      "我会是你坚强的依靠",
+      "你值得这世上最好的爱情",
+      "我想成为你生命中的一部分",
+      "你知道你有多特别吗？",
+      "想陪你去看星星",
+      "点开我的心，全是你",
+      "可不可以成为我的专属",
+      "我会用一生去爱你",
+      "每天醒来想见的人是你",
+      "我的世界因你而亮",
+      "你是我最美的意外",
+      "你是我想呵护的人",
+      "我的心只为你而跳",
+      "你是我最想拥抱的人",
+      "想和你一起数星星",
+      "我愿意成为你的避风港",
+      "遇见你是我最大的幸运",
+      "你是我温柔的归处",
+      "嘿，可以爱我一下吗",
+      "想成为你的专属甜心",
+      "你的每个样子我都喜欢",
+      "我们的故事才刚开始",
+      "愿意给我们一个机会吗",
+      "我想做你心里的那个人",
+      "你是我想珍藏的宝藏",
+      "我们会很幸福的",
+      "我想和你看月亮、数星星",
+      "你是我心里的小太阳",
+      "想带你去吃好多美食",
+      "你的微笑真的很治愈",
+      "想和你一起慢慢变老",
+      "你一定要幸福，最好是和我",
+      "想和你一起度过每个春夏秋冬",
+      "想和你一起看落日余晖",
+      "脑海里全是你的模样",
+      "我的喜欢无法掩饰",
+      "你值得被温柔以待",
+      "我想成为能陪你一生的人",
+      "让我照顾你好吗",
+      "你的一个眼神就让我心动",
+      "想和你一起数晚霞",
+      "和我一起看尽人间烟火",
+      "有你的日子都是晴天",
+      "想和你在春天看花",
+      "牵着你的手去感受夏天",
+      "秋天和你一起看落叶",
+      "冬天陪你看雪花飘落",
+      "你的快乐就是我的幸福",
+      "让我守护你的笑容好吗",
+      "我的心里只装得下你",
+      "想和你创造很多甜蜜时刻",
+      "做我的小公主好不好",
+      "想和你共度余生"
+    ];
+
+    // 让眼睛跟随鼠标移动
+    document.addEventListener('mousemove', function (e) {
+      const leftPupil = document.getElementById('left-pupil');
+      const rightPupil = document.getElementById('right-pupil');
+      const emoji = document.getElementById('emoji');
+
+      // 获取表情的位置
+      const emojiRect = emoji.getBoundingClientRect();
+      const emojiCenterX = emojiRect.left + emojiRect.width / 2;
+      const emojiCenterY = emojiRect.top + emojiRect.height / 2;
+
+      // 计算鼠标与表情中心的相对位置
+      const deltaX = e.clientX - emojiCenterX;
+      const deltaY = e.clientY - emojiCenterY;
+
+      // 限制眼球移动范围
+      const maxMove = 6;
+      const moveX = Math.max(-maxMove, Math.min(maxMove, deltaX / 20));
+      const moveY = Math.max(-maxMove, Math.min(maxMove, deltaY / 20));
+
+      // 移动眼球
+      leftPupil.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      rightPupil.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
+
+    document.getElementById('accept-btn').addEventListener('click', function () {
+      // 隐藏表情和拒绝按钮
+      document.querySelector('.emoji-circle').style.display = 'none';
+      document.getElementById('reject-btn').style.display = 'none';
+      this.style.display = 'none';
+
+      // 显示成功卡片
+      const successCard = document.getElementById('success-card');
+      successCard.style.display = 'block';
+
+      // 添加过渡动画类
+      setTimeout(() => {
+        successCard.classList.add('active');
+
+        // 创建烟花效果
+        createFireworks();
+
+        // 创建飘动的爱心
+        createFloatingHearts();
+
+        // 创建庆祝文字
+        createCelebrateTexts();
+
+        // 创建气球
+        createBalloons();
+
+        // 显示照片和按钮
+        setTimeout(() => {
+          document.getElementById('sweet-photo').style.display = 'block';
+          document.getElementById('celebrate-btn').style.display = 'inline-block';
+        }, 1000);
+
+        // 播放音效
+        playSuccessSound();
+      }, 100);
+
+      // 添加五彩纸屑
+      createConfetti();
+    });
+
+    document.getElementById('reject-btn').addEventListener('click', function () {
+      // 移动"拒绝"按钮到窗口内的随机位置
+      const windowEl = document.querySelector('.window');
+      const windowRect = windowEl.getBoundingClientRect();
+
+      // 计算窗口内的随机位置，确保按钮不会移出窗口
+      const buttonWidth = this.offsetWidth;
+      const buttonHeight = this.offsetHeight;
+      const maxX = windowRect.width - buttonWidth - 20; // 减去按钮宽度和边距
+      const maxY = windowRect.height - buttonHeight - 20; // 减去按钮高度和边距
+
+      // 设置为相对于.window的绝对定位
+      this.style.position = 'absolute';
+      this.style.left = Math.floor(Math.random() * maxX + 10) + 'px'; // 至少距离边缘10px
+      this.style.top = Math.floor(Math.random() * maxY + 10) + 'px'; // 至少距离边缘10px
+      this.style.zIndex = '200'; // 确保按钮在最上层
+
+      // 显示一条随机的甜蜜消息
+      const randomMessage = sweetMessages[Math.floor(Math.random() * sweetMessages.length)];
+      const messageEl = document.createElement('div');
+      messageEl.className = 'sweet-message';
+      messageEl.textContent = randomMessage;
+
+      // 设置消息出现的位置（在窗口内随机位置）
+      messageEl.style.left = (Math.random() * (windowRect.width - 150) + 20) + 'px';
+      messageEl.style.top = (Math.random() * (windowRect.height - 80) + 20) + 'px';
+
+      windowEl.appendChild(messageEl);
+
+      // 2秒后移除消息元素
+      setTimeout(() => {
+        messageEl.remove();
+      }, 2000);
+    });
+
+    // 创建烟花效果
+    function createFireworks () {
+      const fireworksCount = 5;
+      const colors = ['#ff5b79', '#5b79ff', '#79ff5b', '#ffda5b', '#da5bff'];
+      const windowEl = document.querySelector('.window');
+
+      for (let i = 0; i < fireworksCount; i++) {
+        setTimeout(() => {
+          const firework = document.createElement('div');
+          firework.className = 'success-firework';
+          firework.style.left = Math.random() * 100 + '%';
+          firework.style.top = Math.random() * 100 + '%';
+          firework.style.color = colors[Math.floor(Math.random() * colors.length)];
+
+          windowEl.appendChild(firework);
+
+          setTimeout(() => {
+            firework.remove();
+          }, 1000);
+        }, i * 300);
+      }
+    }
+
+    // 创建飘动的爱心
+    function createFloatingHearts () {
+      const heartsContainer = document.getElementById('flying-hearts');
+      const heartsCount = 20;
+
+      for (let i = 0; i < heartsCount; i++) {
+        setTimeout(() => {
+          const heart = document.createElement('div');
+          heart.className = 'flying-heart';
+          heart.innerHTML = '❤️';
+          heart.style.left = Math.random() * 100 + '%';
+          heart.style.animationDelay = (Math.random() * 2) + 's';
+          heart.style.fontSize = (Math.random() * 10 + 15) + 'px';
+          heart.style.opacity = '0';
+
+          heartsContainer.appendChild(heart);
+
+          setTimeout(() => {
+            heart.remove();
+          }, 4000);
+        }, i * 200);
+      }
+    }
+
+    // 创建庆祝文字
+    function createCelebrateTexts () {
+      const windowEl = document.querySelector('.window');
+      const texts = ['甜蜜！', '幸福！', '厉害了！', '爱情万岁！', '好耶！'];
+
+      for (let i = 0; i < 5; i++) {
+        setTimeout(() => {
+          const text = document.createElement('div');
+          text.className = 'celebrate-text';
+          text.textContent = texts[i];
+          text.style.left = Math.random() * 60 + 20 + '%';
+          text.style.top = Math.random() * 60 + 20 + '%';
+          text.style.fontSize = (Math.random() * 10 + 15) + 'px';
+
+          windowEl.appendChild(text);
+
+          setTimeout(() => {
+            text.remove();
+          }, 3000);
+        }, i * 500);
+      }
+    }
+
+    // 创建五彩纸屑
+    function createConfetti () {
+      const confettiContainer = document.createElement('div');
+      confettiContainer.className = 'confetti-container';
+      document.querySelector('.window').appendChild(confettiContainer);
+
+      const colors = ['#ff5b79', '#5b79ff', '#79ff5b', '#ffda5b', '#da5bff'];
+      const confettiCount = 100;
+
+      for (let i = 0; i < confettiCount; i++) {
+        const confetti = document.createElement('div');
+        confetti.className = 'confetti';
+
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const size = Math.random() * 10 + 5;
+        const shape = Math.random() > 0.5 ? 'circle' : 'rect';
+
+        confetti.style.left = Math.random() * 100 + '%';
+        confetti.style.backgroundColor = color;
+        confetti.style.width = size + 'px';
+        confetti.style.height = size + 'px';
+
+        if (shape === 'circle') {
+          confetti.style.borderRadius = '50%';
+        }
+
+        const animationDuration = Math.random() * 3 + 2;
+        const animationDelay = Math.random() * 2;
+
+        confetti.style.animation = `fall ${animationDuration}s ease-in ${animationDelay}s forwards`;
+
+        confettiContainer.appendChild(confetti);
+      }
+
+      // 添加CSS动画
+      const styleElement = document.createElement('style');
+      styleElement.textContent = `
+              @keyframes fall {
+                  0% { transform: translateY(-100px) rotate(0deg); opacity: 1; }
+                  100% { transform: translateY(${window.innerHeight}px) rotate(360deg); opacity: 0; }
+              }
+          `;
+      document.head.appendChild(styleElement);
+
+      // 3秒后移除纸屑容器
+      setTimeout(() => {
+        confettiContainer.remove();
+        styleElement.remove();
+      }, 5000);
+    }
+
+    // 创建气球
+    function createBalloons () {
+      const balloonContainer = document.createElement('div');
+      balloonContainer.className = 'balloon-container';
+      document.querySelector('.window').appendChild(balloonContainer);
+
+      const colors = ['#ff5b79', '#5b79ff', '#79ff5b', '#ffda5b', '#da5bff'];
+      const balloonCount = 8;
+
+      for (let i = 0; i < balloonCount; i++) {
+        const balloon = document.createElement('div');
+        balloon.className = 'balloon';
+
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        balloon.style.backgroundColor = color;
+        balloon.style.left = (i * (100 / balloonCount)) + '%';
+        balloon.style.animationDelay = (Math.random() * 2) + 's';
+
+        balloonContainer.appendChild(balloon);
+      }
+
+      // 10秒后移除气球容器
+      setTimeout(() => {
+        balloonContainer.remove();
+      }, 10000);
+    }
+
+    // 播放音效
+    function playSuccessSound () {
+      try {
+        const audio = new Audio('data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAAsAAAkIAAhISEhMTExMTFBQUFBQVFRUVFRYWFhYWFxcXFxcYGBgYGBkZGRkZGhoaGhoaGxsbGxscHBwcHB0dHR0dHh4eHh4fHx8fHx8fHx8fHx//////////////8AAAAATGF2YzU4LjEzAAAAAAAAAAAAAAAAJAAAAAAAAAAAJCDxYHgkAAAAAAD/+xDEAAPwAAGkAAAAIAAANIAAAASRlRmaGZWIkDMyzMwkyZi8nCDJmWTFaTJqkyWpmJwmYnCZicJoicJmJwmYnCZicJxBHJ1BoQUC4i1Tt4JYrgcw7H8lyXNcxFzDHM5ZxiLmXYuZdi5l2LsXYuxdj4VRVE//+xDEMQPwAAGkAAAAIAAANIAAAASUVRVE8XZVFUVRdlUVRVF0XRVFUXRVFUVRdF0VRVEUVQ1DyIN0aGlwOEGQGNIgaCgnPhup0k7kVR1HUdHUdR1HUdR1HUdR1HUdR1HUdR1HUdR1HUdR1HUdR1HUdR//sQxHGDwAABpAAAACAAADSAAAAElHUdR1HUdR1GSSSSSSSSSSSQAAAAAEqf4ox+KAAAAAJQAAkAJIhICEAhIAAAAOgAAAACUAAJAA0gALcAAAAl//42wAAABJJAISSSSRhIAAAAAAAAAAAAJI=');
+        audio.play();
+      } catch (e) {
+        console.log('音频播放失败，可能需要用户交互');
+      }
+    }
+
+    // 添加庆祝按钮交互
+    document.getElementById('celebrate-btn').addEventListener('click', function () {
+      createFireworks();
+      createFloatingHearts();
+      createCelebrateTexts();
+      playSuccessSound();
+    });
+  </script>
+
+
+</body>
+
+</html>
