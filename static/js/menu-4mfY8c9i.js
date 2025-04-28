@@ -1,1 +1,0 @@
-import{am as n}from"./index-BxLtnPqY.js";function t(){return n.get("/api/menu")}function e(t){return n.get(`/api/menu/${t}`)}function u(t){return n.post("/api/menu/del",t)}function a(t){return n.post("/api/menu/set",t)}export{t as a,u as d,e as g,a as s};
