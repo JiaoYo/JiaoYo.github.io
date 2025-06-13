@@ -1,1 +1,0 @@
-import{cY as o,dq as e}from"./index-h8g4fQfr.js";const a={0:"page.manage.alarm.statusObj.open",1:"page.manage.alarm.statusObj.close"};o(a);const t={1:"外设（USB）",2:"网络连接",3:"进程启停",4:"软件安装与卸载",5:"登陆异常",6:"系统解锁",7:"达到阈值",8:"Licnse过期"},n=e(t),s={0:"一般",1:"低级",2:"中级",3:"高级",4:"严重"},p=e(s),r={1:"提示",2:"低危",3:"中危",4:"高危",5:"致命"},i=e(r);export{t as A,r as S,i as a,s as b,n as c,p as d};
