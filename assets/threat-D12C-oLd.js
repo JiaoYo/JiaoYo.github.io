@@ -1,1 +1,0 @@
-import{by as t}from"./index-Dau8rq44.js";function n(e){return t({url:"/threatEvents/selectPage.do",method:"get",params:function(){return Object.prototype.hasOwnProperty.call(e,"timeRange")&&delete e.timeRange,e}()})}function a(e){return t({url:"/auditInteligence/selectPage.do",method:"get",params:e})}export{a,n as f};
