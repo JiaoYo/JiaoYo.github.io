@@ -1,0 +1,1 @@
+import{_ as o}from"./exception-base.vue_vue_type_script_setup_true_lang-DaNSS8Ss.js";import{d as n,o as t,c as _,_ as a}from"./index-DDqPRUFG.js";const c=n({name:"404",__name:"index",setup(s){return(p,r)=>{const e=o;return t(),_(e,{type:"404"})}}}),d=a(c,[["__scopeId","data-v-37943a42"]]);export{d as default};
