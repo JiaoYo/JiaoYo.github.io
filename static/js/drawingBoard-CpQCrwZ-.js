@@ -1,1 +1,0 @@
-import{_ as r,o,f as t}from"./index-7Ke4gaSZ.js";const a={src:"https://songlh.top/paint-board/",frameborder:"0"};const s=r({},[["render",function(r,s){return o(),t("iframe",a)}],["__scopeId","data-v-f6c96645"]]);export{s as default};

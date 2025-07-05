@@ -1,1 +1,0 @@
-import{ap as t}from"./index-7Ke4gaSZ.js";function i(i){return t.get("/api/dict",i)}function n(i){return t.post("/api/dict/set",i)}function o(i){return t.post("/api/dict/del",i)}function s(i){return t.post("/api/dict/info",i)}function a(i){return t.post("/api/dict/info/set",i)}function r(i){return t.post("/api/dict/info/del",i)}export{n as a,s as b,o as c,r as d,i as g,a as s};
