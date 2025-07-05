@@ -1,0 +1,1 @@
+import{ap as s}from"./index-7Ke4gaSZ.js";function t(t){return s.post("/api/user/list",t)}function r(t){return s.post("/api/user/set",t)}function e(t){return s.post("/api/user/del",t)}export{e as d,t as g,r as s};

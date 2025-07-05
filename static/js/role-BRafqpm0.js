@@ -1,0 +1,1 @@
+import{ap as t}from"./index-7Ke4gaSZ.js";function n(n){return t.post("/api/role/list",n)}function r(n){return t.get(`/api/role/menu/${n}`)}function e(n){return t.post("/api/role/menu",n)}function o(n){return t.post("/api/role/set",n)}function s(n){return t.post("/api/role/del",n)}export{n as a,s as d,r as g,o as s,e as u};
