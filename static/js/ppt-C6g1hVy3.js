@@ -1,0 +1,1 @@
+import{_ as r,o as t,f as e}from"./index-Ds44FQ2x.js";const i={src:"https://pipipi-pikachu.github.io/PPTist/",frameborder:"0"};const s=r({},[["render",function(r,s){return t(),e("iframe",i)}],["__scopeId","data-v-10cc75e3"]]);export{s as default};
