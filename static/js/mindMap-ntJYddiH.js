@@ -1,1 +1,0 @@
-import{_ as a,o as r,f as e}from"./index-BCJ5rRXW.js";const t={src:"https://wanglin2.github.io/mind-map/#/",frameborder:"0"};const n=a({},[["render",function(a,n){return r(),e("iframe",t)}],["__scopeId","data-v-09b532ae"]]);export{n as default};

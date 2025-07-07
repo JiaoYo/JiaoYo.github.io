@@ -1,1 +1,0 @@
-import{G as o}from"./index-BWei4MRY.js";import{d as e,b as n,o as t,c as s}from"./index-BCJ5rRXW.js";const r=e({__name:"ModalContent",props:{filecontent:{type:String,default:""}},setup(e,{expose:r}){const a=n(),c=e;return r({formRef:a}),(e,n)=>{const r=o;return t(),s(r,{codeJson:c.filecontent},null,8,["codeJson"])}}});export{r as _};
