@@ -1,0 +1,1 @@
+import{bX as t}from"./index-FKKSWlZs.js";function r(e){return t({url:`/sys/schedule/${e}`,method:"get"})}function u(e){return t({url:"/sys/schedule/update.do",method:"post",data:e})}export{r as a,u as f};
