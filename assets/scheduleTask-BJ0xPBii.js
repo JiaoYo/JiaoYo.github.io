@@ -1,1 +1,0 @@
-import{bW as t}from"./index-DLQv0xE2.js";function r(e){return t({url:`/sys/schedule/${e}`,method:"get"})}function u(e){return t({url:"/sys/schedule/update.do",method:"post",data:e})}export{r as a,u as f};
