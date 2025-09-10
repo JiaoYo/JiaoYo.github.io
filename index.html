@@ -1,131 +1,250 @@
-<!DOCTYPE html><html lang=en class=beauty-scroll><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/linkqi.png><title>Admin</title><style>/* .fixed-header {
-            z-index: 999999 !important;
-        } */
-
-        .ant-layout-header {
-            height: 45px !important;
-            line-height: 45px !important;
+<!doctype html>
+<html lang="zh-cmn-Hans">
+    <head>
+    <meta name="buildTime" content="2025-09-10 08:39:18">
+        <meta charset="UTF-8" />
+        <!-- <link rel="icon" href="/favicon.svg" /> -->
+        <link rel="icon" href="/assets/hookwe-5sJDzaAQ.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="light dark" />
+        <title>网关配置系统</title>
+        <!-- <style>
+        .n-card__content {
+            height: calc(100%);
         }
 
-        .ant-card-head-wrapper {
-            height: 40px !important;
-            line-height: 1 !important;
+        .n-split-pane-1 > div:nth-child(3) {
+            height: calc(100% - 40px - 34px) !important;
+            overflow: hidden !important;
         }
 
-        .ant-menu-item {
-            margin: 0 !important;
+        .bg-container {
+            color: #fff !important;
+            background: #042259 !important;
         }
 
-        .redDiv {
-            width: 15px;
-            height: 15px;
-            margin: 0 auto;
-            background: #f00;
-            border-radius: 50%;
+        .bg-layout {
+            background: #042259 !important;
         }
 
-        .greenDiv {
-            width: 15px;
-            height: 15px;
-            margin: 0 auto;
-            background: #0f0;
-            border-radius: 50%;
+        .n-breadcrumb-item__link {
+            color: #fff !important;
         }
 
-        .standbyDiv {
-            width: 15px;
-            height: 15px;
-            margin: 0 auto;
-            background: #f90;
-            border-radius: 50%;
+        .n-button--default-type .n-button__content, .n-button--default-type .n-button__icon {
+            color: #fff !important;
         }
 
-        .communicationInterruptionDiv {
-            width: 15px;
-            height: 15px;
-            margin: 0 auto;
-            background: #FF00BE;
-            border-radius: 50%;
+        .n-form-item-label__text {
+            color: #fff !important;
         }
 
-        .offlineDiv {
-            width: 15px;
-            height: 15px;
-            margin: 0 auto;
-            background: #999;
-            border-radius: 50%;
+        .n-base-selection-label {
+            background: #042259 !important;
         }
 
-        .unknownDiv {
-            width: 15px;
-            height: 15px;
-            margin: 0 auto;
-            background: #000;
-            border-radius: 50%;
+        .n-base-selection__border {
+            border: 1px solid #247aca !important;
         }
 
-        /*滚动条整体部分*/
-        .mytable-scrollbar ::-webkit-scrollbar {
-            width: 10px;
-            height: 10px;
+        .n-base-selection-overlay__wrapper {
+            color: #fff !important;
         }
 
-        /*滚动条的轨道*/
-        .mytable-scrollbar ::-webkit-scrollbar-track {
-            background-color: #FFFFFF;
+        .n-select-menu {
+            background: #247aca !important;
         }
 
-        /*滚动条里面的小方块，能向上向下移动*/
-        .mytable-scrollbar ::-webkit-scrollbar-thumb {
-            background-color: #bfbfbf;
-            border-radius: 5px;
-            border: 1px solid #F1F1F1;
-            box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        .n-base-select-option__content {
+            color: #fff !important;
         }
 
-        .mytable-scrollbar ::-webkit-scrollbar-thumb:hover {
-            background-color: #A8A8A8;
+        .n-base-select-option::before {
+            background: #247aca !important;
         }
 
-        .mytable-scrollbar ::-webkit-scrollbar-thumb:active {
-            background-color: #787878;
+        .n-base-select-option__check {
+            color: #fff !important;
         }
 
-        /*边角，即两个滚动条的交汇处*/
-        .mytable-scrollbar ::-webkit-scrollbar-corner {
-            background-color: #FFFFFF;
+        .n-card {
+            background: #042259 !important;
         }
 
-        .vxe-pager--sizes {
-            width: 10em !important;
-            max-width: 10em !important;
+        .n-card-header__main {
+            color: #fff !important;
         }
 
-        .ant-notification {
-            top: 60px !important;
-            height: 90vh !important;
-            overflow-y: auto !important;
-            /* height: 95vh !important;
-            overflow-y: auto !important; */
+        .n-data-table-th {
+            color: #fff !important;
+            background: #042259 !important;
         }
 
-        .ant-notification::-webkit-scrollbar {
-            display: none !important;
+        .n-checkbox-box {
+            background: transparent !important;
         }
 
-        .ant-message-custom-content {
-            display: inline-block !important;
-            /* display: flex !important; */
-            /* align-items: center !important; */
+        .n-data-table-td {
+            color: #fff !important;
+            background: #042259 !important;
         }
 
-        .ant-message-custom-content div {
-            display: inline-block !important;
-            text-align: left !important;
+        .n-input {
+            background: #042259 !important;
         }
 
-        .ant-message-custom-content {
-            display: flex !important;
-            justify-content: center !important;
-            align-items: center !important;
-        }</style><link href=/assets/app.63cf9a76.css rel=stylesheet></head><body><div id=popContainer class=beauty-scroll style="height: 100vh; overflow-y: auto"><div id=app></div></div><script src=/assets/app.63cf9a76.js></script></body></html>
+        .n-input__input-el {
+            color: #fff !important;
+        }
+
+        .n-input__border {
+            border: 1px solid #247aca !important;
+        }
+
+        .n-pagination-item {
+            color: #fff !important;
+            background: transparent !important;
+        }
+
+        .n-pagination-prefix {
+            color: #fff !important;
+        }
+
+        .n-base-selection-input__content {
+            color: #fff !important;
+        }
+
+        .n-drawer {
+            color: #fff !important;
+            background: #042259 !important;
+        }
+
+        .n-drawer-header {
+            color: #fff !important;
+        }
+
+        .n-drawer .n-base-icon {
+            color: #fff !important;
+        }
+
+        .n-drawer .text-base_text {
+            color: #fff !important;
+        }
+
+        .n-divider__title {
+            color: #fff !important;
+        }
+
+        .n-alert {
+            color: #fff !important;
+            background: #1452c5!important;
+            border: 1px solid #1890ff!important;
+        }
+
+        .n-alert-body__title {
+            color: #fff !important;
+        }
+
+        .n-alert-body__content {
+            color: #fff !important;
+        }
+
+        .n-popover {
+            color: #fff !important;
+            background: #1452c5!important;
+        }
+
+        .n-checkbox__label {
+            color: #fff !important;
+        }
+
+        aside {
+            box-sizing: border-box !important;
+            /* border-right: 1px solid #001529 !important; */
+            box-shadow: 2px 0px 2px rgba(20, 82, 197, 0.2);
+        }
+
+        .n-dropdown {
+            background: #1452c5!important;
+        }
+
+        .n-dropdown-option-body {
+            color: #fff!important;
+        }
+
+        .n-dropdown-option-body__prefix {
+            color: #fff!important;
+        }
+
+        .n-dropdown-option-body::before {
+            background: #1452c5 !important;
+        }
+
+        .n-dialog {
+            color: #fff !important;
+            background: #042259 !important;
+        }
+
+        .n-dialog .n-dialog__title {
+            color: #fff !important;
+        }
+
+        .n-dialog__close {
+            color: #fff !important;
+        }
+
+        .n-descriptions-table-content {
+            color: #fff !important;
+        }
+
+        .n-descriptions-table-content__content {
+            color: #fff !important;
+        }
+
+        .n-card-header__close {
+            color: #fff !important;
+        }
+
+        .n-progress-icon--as-text {
+            color: #fff !important;
+        }
+
+        .n-card--bordered {
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        }
+
+        .n-data-table {
+            --n-border-color: rgba(255, 255, 255, 0.3) !important;
+            border-color: rgba(255, 255, 255, 0.3) !important;
+        }
+
+        .n-scrollbar {
+            --n-scrollbar-color: #1890ff !important;
+            --n-scrollbar-color-hover: #1890ff !important;
+        }
+
+        .n-input__textarea textarea {
+            color: #fff !important;
+        }
+
+        .n-base-selection-input {
+            color: #fff !important;
+        }
+
+        .n-upload-file-info__name {
+            color: #fff !important;
+        }
+
+        .n-upload {
+            --n-item-color-hover: transparent !important;
+        }
+    </style> -->
+        <script src="/decimal.js"></script>
+      <script type="module" crossorigin src="/assets/index-DtW-iSHU.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-CeVCKBUr.css">
+    </head>
+
+    <body>
+        <div id="app"></div>
+    </body>
+</html>
