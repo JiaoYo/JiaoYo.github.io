@@ -1,0 +1,1 @@
+import{p as e}from"./index-BrSW3Qk_.js";function o(){const t=e();function n(u){return t.isLogin?typeof u=="string"?t.userInfo.buttons.includes(u):u.some(r=>t.userInfo.buttons.includes(r)):!1}return{hasAuth:n}}export{o as u};
