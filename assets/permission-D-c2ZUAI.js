@@ -1,1 +1,0 @@
-import{m as r}from"./index-K-Oe9yen.js";const t=r(),h=o=>{var s;return(s=t.userInfo.permissions)==null?void 0:s.some(e=>e==o)};export{h};
