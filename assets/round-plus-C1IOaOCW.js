@@ -1,1 +1,0 @@
-import{R as o,b as n,o as a,e as t}from"./index-CYM7WsrU.js";const r={class:"inline-block",viewBox:"0 0 24 24",width:"1em",height:"1em"};function s(l,e){return a(),n("svg",r,e[0]||(e[0]=[t("path",{fill:"currentColor",d:"M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2"},null,-1)]))}const i=o({name:"ic-round-plus",render:s});export{i as _};
