@@ -1,1 +1,0 @@
-import{bh as t}from"./index-D4hYoSdz.js";function o(e){return t({url:"/count/getDevTypeAlarmHomePage.do",method:"get",params:e})}function m(e){return t({url:"/count/getDevTypeLevelAlarm.do",method:"get",params:e})}export{o as a,m as f};
