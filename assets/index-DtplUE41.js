@@ -1,0 +1,1 @@
+import t from"./index-C1hUDcUp.js";import{d as o,c as e,o as r}from"./index-BhCSo1qK.js";import"./home-CiIc2_gM.js";import"./collectionServices-Bl2JFtRQ.js";import"./DataTable-AqtE8F60.js";import"./Forward-PWIdvFw4.js";import"./DatePicker-nOyyG1-Q.js";const d=o({name:"configsetting_dataquery",__name:"index",setup(a){return(m,n)=>(r(),e(t))}});export{d as default};
