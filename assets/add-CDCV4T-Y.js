@@ -1,0 +1,1 @@
+import{R as o,b as n,o as t,e as a}from"./index-B_oLz7Qo.js";const s={class:"inline-block",viewBox:"0 0 24 24",width:"1em",height:"1em"};function l(r,e){return t(),n("svg",s,e[0]||(e[0]=[a("path",{fill:"currentColor",d:"M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"},null,-1)]))}const c=o({name:"material-symbols-add",render:l});export{c as _};
