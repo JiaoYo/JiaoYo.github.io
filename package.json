@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "agentchat",
+  "description": "Multi-provider AI CDP bridge — Claude Code skills for free web AI agents",
+  "dependencies": {
+    "playwright-core": "^1.61.0"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  },
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
