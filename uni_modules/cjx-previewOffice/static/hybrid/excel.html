@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html dir="ltr" mozdisallowselectionprint>
+	<head>
+		<meta charset="utf-8">
+		<title>预览excel</title>
+		
+		<link rel='stylesheet' href='./excel/pluginsCss.css' />
+		<link rel='stylesheet' href='./excel/plugins.css' />
+		<link rel='stylesheet' href='./excel/luckysheet.css' />
+		<link rel='stylesheet' href='./excel/iconfont.css' />
+		<script src="./utils/flexible.js"></script>
+		<script src="./utils/getQueryVariable.js"></script>
+		<script src="./excel/plugin.js"></script>
+		<script src="./excel/luckysheet.umd.js"></script>
+		<script src="./excel/luckyexcel.umd.js"></script>
+		<link rel="resource" type="application/l10n" href="./excel/viewer.properties" />
+	</head>
+	
+	<style type="text/css">
+		*{padding: 0;margin: 0;}
+		body {
+			height: 100vh;
+			width: 100vw;
+		}
+		#container {
+			width: 100%;
+			height: calc(100% - 10px);
+			font-size: 18px;
+		}
+		.luckysheet-sta-c {
+			/* display: flex; */
+		}
+		/* .luckysheet-sta-c {
+			height: 0.77rem;
+		}
+		.luckysheet-zoom-content {
+			width: 4rem;
+			height: 0.77rem;
+			line-height: 0.77rem;
+		}
+		.luckysheet-zoom-content .luckysheet-zoom-minus-icon {
+			width: 0.4rem;
+			height: 0.08rem;
+		}
+		.luckysheet-zoom-content .luckysheet-zoom-plus .luckysheet-zoom-plus-icon {
+			width: 0.4rem;
+			height: 0.4rem;
+		}
+		
+		.luckysheet-zoom-content .luckysheet-zoom-slider {
+			width: 1.8rem;
+			left: 0.5rem;
+		} */
+	</style>
+	
+	<script>
+	
+		(async function () {
+			const fileUrl = decodeURIComponent(getQueryVariable('file') || '')
+			console.log('excel', fileUrl)
+			LuckyExcel.transformExcelToLuckyByUrl(fileUrl, '测试.xlsl', (exportJson, luckysheetfile) => {
+					if (exportJson.sheets == null || exportJson.sheets.length === 0) {
+						console.warn('暂不支持该文件预览')
+						return
+					}
+					const safeBottom = getQueryVariable('safeBottom')
+					document.getElementById('container').style.height = `calc(100% - ${safeBottom}px)`
+					const firstData = []
+					const secondData = {}
+					for (let i = 0; i < exportJson.sheets.length; i++) {
+						firstData[i] = {
+								name: exportJson.sheets[i].name,
+								index: exportJson.sheets[i].index,
+								order: exportJson.sheets[i].order,
+								status: exportJson.sheets[i].status,
+								config: exportJson.sheets[i].config,
+						}
+						firstData[i].config.row = 10
+						parseInt(exportJson.sheets[i].status) === 1 ? (firstData[i].celldata = exportJson.sheets[i].celldata) : 0 == 0
+						secondData[exportJson.sheets[i].index] = exportJson.sheets[i].celldata
+					}
+					// luckysheet生成网页excel
+					window?.luckysheet.destroy()
+					window?.luckysheet.create({
+						lang: 'zh',
+						container: 'container', // 设定DOM容器的id
+						allowUpdate: true,
+						showtoolbar: false, // 是否显示工具栏
+						showinfobar: false, // 是否显示顶部信息栏
+						showstatisticBar: true, // 是否显示底部计数栏
+						sheetBottomConfig: false, // sheet页下方的添加行按钮和回到顶部按钮配置
+						allowEdit: false, // 是否允许前台编辑
+						enableAddRow: false, // 是否允许增加行
+						enableAddCol: false, // 是否允许增加列
+						sheetFormulaBar: false, // 是否显示公式栏
+						data: exportJson.sheets, //表格内容
+						enableAddBackTop: true, //返回顶部
+						title: exportJson.info.name, //表格标题
+						sheetRightClickConfig: {
+							delete: false, // 删除
+							copy: false, // 复制
+							rename: false, //重命名
+							color: false, //更改颜色
+							hide: false, //隐藏，取消隐藏
+							move: false, //向左移，向右移
+						},
+						showsheetbarConfig: {
+							add: false,
+						},
+						devicePixelRatio: window.devicePixelRatio, //分辨率
+						defaultFontSize: 20, //默认字体大小
+						cellRightClickConfig: {
+							copy: false, // 复制
+							copyAs: false, // 复制为
+							paste: false, // 粘贴
+							insertRow: false, // 插入行
+							insertColumn: false, // 插入列
+							deleteRow: false, // 删除选中行
+							deleteColumn: false, // 删除选中列
+							deleteCell: false, // 删除单元格
+							hideRow: false, // 隐藏选中行和显示选中行
+							hideColumn: false, // 隐藏选中列和显示选中列
+							rowHeight: false, // 行高
+							columnWidth: false, // 列宽
+							clear: false, // 清除内容
+							matrix: false, // 矩阵操作选区
+							sort: false, // 排序选区
+							filter: false, // 筛选选区
+							chart: false, // 图表生成
+							image: false, // 插入图片
+							link: false, // 插入链接
+							data: false, // 数据验证
+							cellFormat: false, // 设置单元格格式
+						},
+					})
+			})
+		}())
+	</script>
+	
+	<body id="body">
+		<div id="container"></div>
+	</body>
+	
+	
+	
+</html>
+

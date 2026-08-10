@@ -1,0 +1,695 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/project",
+			"style": {
+				"navigationBarTitleText": "项目",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/login",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/attendance",
+			"style": {
+				"navigationBarTitleText": "考勤",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/map",
+			"style": {
+				"navigationBarTitleText": "轨迹",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark"
+			}
+		},
+		{
+			"path": "pages/me",
+			"style": {
+				"navigationBarTitleText": "我"
+			}
+		}
+	],
+	"subPackages": [
+		{
+			"root": "projectPages",
+			"pages": [
+				{
+					"path": "addproject/Index",
+					"style": {
+						"navigationBarTitleText": "新增项目"
+					}
+				},
+				{
+					"path": "projectdetail/Index",
+					"style": {
+						"navigationBarTitleText": "项目详情",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "contractpage/Index",
+					"style": {
+						"navigationBarTitleText": "合同列表",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "contractdetail/Index",
+					"style": {
+						"navigationBarTitleText": "合同详情",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addprojectdevice/Index",
+					"style": {
+						"navigationBarTitleText": "添加设备"
+					}
+				},
+                {
+                    "path": "addcontract/Index",
+                    "style": {
+                        "navigationBarTitleText": "新增合同"
+                    }
+                },
+				{
+					"path": "addprjmember/Index",
+					"style": {
+					    "navigationBarTitleText": "新增项目联系人"
+					}
+				},
+				{
+					"path": "adddebugbusiness/Index",
+					"style": {
+					    "navigationBarTitleText": "新增待调试业务"
+					}
+				},
+				{
+					"path": "debugbussinessinfo/Index",
+					"style": {
+					    "navigationBarTitleText": "调试业务详情"
+					}
+				},
+				{
+					"path": "adddebugequipment/Index",
+					"style": {
+					    "navigationBarTitleText": "新增待调试设备"
+					}
+				},
+				{
+					"path": "debugequipmentinfo/Index",
+					"style": {
+					    "navigationBarTitleText": "调试设备详情"
+					}
+				},
+				{
+					"path": "addprjcycle/Index",
+					"style": {
+						"navigationBarTitleText": "新增项目周期"
+					}
+				},
+				{
+					"path": "prjcycleinfo/Index",
+					"style": {
+						"navigationBarTitleText": "项目周期详情"
+					}
+				},
+				{
+					"path": "writedialyreport/Index",
+					"style": {
+						"navigationBarTitleText": "技术支持日报"
+					}
+				},
+				{
+					"path": "prjDebugMemberpage/Index",
+					"style": {
+						"navigationBarTitleText": "调试工程师",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addprjdebugmemberpage/Index",
+					"style": {
+						"navigationBarTitleText": "新增调试工程师"
+					}
+				},
+				{
+					"path": "diapatcherpage/Index",
+					"style": {
+						"navigationBarTitleText": "调度联系人",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "adddiapatcher/Index",
+					"style": {
+						"navigationBarTitleText": "新增调度联系人"
+					}
+				},
+				{
+					"path": "addrequiredchange/Index",
+					"style": {
+						"navigationBarTitleText": "新增需求变更"
+					}
+				},
+				{
+					"path": "addneeddevelop/Index",
+					"style": {
+						"navigationBarTitleText": "新增需要开发"
+					}
+				},
+				{
+					"path": "prjsummarypage/Index",
+					"style": {
+						"navigationBarTitleText": "项目总结",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addprjsummary/Index",
+					"style": {
+						"navigationBarTitleText": "新增项目总结"
+					}
+				},
+				{
+					"path": "prjsummaryinfo/Index",
+					"style": {
+						"navigationBarTitleText": "项目总结详情"
+					}
+				},
+				{
+					"path": "contractdevicepage/Index",
+					"style": {
+						"navigationBarTitleText": "设备列表",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "contractdeviceinfo/Index",
+					"style": {
+						"navigationBarTitleText": "设备详情"
+					}
+				},
+				{
+					"path": "requiredchangeinfo/Index",
+					"style": {
+						"navigationBarTitleText": "需求变更详情"
+					}
+				},
+				{
+					"path": "needdevelopinfo/Index",
+					"style": {
+						"navigationBarTitleText": "需要开发详情"
+					}
+				},
+				{
+					"path": "addprjform/Index",
+					"style": {
+						"navigationBarTitleText": "新增项目联络单"
+					}
+				},
+				{
+					"path": "prjformdetail/Index",
+					"style": {
+						"navigationBarTitleText": "项目联络单详情",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addprjformmember/Index",
+					"style": {
+						"navigationBarTitleText": "新增联系人"
+					}
+				},
+				{
+					"path": "addprjformdebugequipment/Index",
+					"style": {
+						"navigationBarTitleText": "新增调试设备"
+					}
+				},
+				{
+					"path": "addprjformdebugbusiness/Index",
+					"style": {
+						"navigationBarTitleText": "新增调试业务"
+					}
+				},
+				{
+					"path": "prjformdebugequipmentinfo/Index",
+					"style": {
+						"navigationBarTitleText": "调试设备详情"
+					}
+				},
+				{
+					"path": "prjformdebugbussinessinfo/Index",
+					"style": {
+						"navigationBarTitleText": "调试业务详情"
+					}
+				},
+				{
+					"path": "projectcontractpage/Index",
+					"style": {
+						"navigationBarTitleText": "项目合同管理",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addparticipant/Index",
+					"style": {
+						"navigationBarTitleText": "新增项目参与人"
+					}
+				}
+			]
+		},
+		{
+			"root": "mePages",
+			"pages": [
+				{
+					"path": "userinfo/Index",
+					"style": {
+						"navigationBarTitleText": "个人信息",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "updatemobile/Index",
+					"style": {
+						"navigationBarTitleText": "联系方式"
+					}
+				},
+				{
+					"path": "updatepassword/Index",
+					"style": {
+						"navigationBarTitleText": "修改密码"
+					}
+				},
+				{
+					"path": "membermanage/Index",
+					"style": {
+						"navigationBarTitleText": "用户管理",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addmember/Index",
+					"style": {
+						"navigationBarTitleText": "新增用户"
+					}
+				},
+				{
+					"path": "prjmanage/Index",
+					"style": {
+						"navigationBarTitleText": "项目管理",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "prjdetail/Index",
+					"style": {
+						"navigationBarTitleText": "项目详情",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "webview/Index",
+					"style": {
+						"navigationBarTitleText": "关于我们"
+					}
+				},
+				{
+					"path": "rtuniupdate/Index",
+					"style": {
+						"navigationBarTitleText": "版本更新"
+					}
+				},
+				{
+					"path": "dispatchmanage/Index",
+					"style": {
+						"navigationBarTitleText": "主站联系人管理",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "adddispatch/Index",
+					"style": {
+						"navigationBarTitleText": "新增主站联系人"
+					}
+				},
+				{
+					"path": "prjdispatchinfo/Index",
+					"style": {
+						"navigationBarTitleText": "主站联系人详情"
+					}
+				},
+				{
+					"path": "prjweightpage/Index",
+					"style": {
+						"navigationBarTitleText": "项目权重管理",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addprjweight/Index",
+					"style": {
+						"navigationBarTitleText": "新增项目权重"
+					}
+				},
+				{
+					"path": "technicalsupportdaily/Index",
+					"style": {
+						"navigationBarTitleText": "技术支持日报",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "dailyreportinfo/Index",
+					"style": {
+						"navigationBarTitleText": "技术支持日报详情"
+					}
+				},
+				{
+					"path": "addtechnicalsupportdaily/Index",
+					"style": {
+						"navigationBarTitleText": "新增技术支持日报"
+					}
+				},
+				{
+					"path": "technicalsupportweekly/Index",
+					"style": {
+						"navigationBarTitleText": "技术支持周报",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "weekcommentinfo/Index",
+					"style": {
+						"navigationBarTitleText": "技术支持周报详情"
+					}
+				},
+				{
+					"path": "addtechnicalsupportweekly/Index",
+					"style": {
+						"navigationBarTitleText": "新增技术支持周报"
+					}
+				},
+				{
+					"path": "meetingminutes/Index",
+					"style": {
+						"navigationBarTitleText": "会议纪要列表",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "meetingminutesinfo/Index",
+					"style": {
+						"navigationBarTitleText": "会议纪要详情"
+					}
+				},
+				{
+					"path": "addmeetingminutes/Index",
+					"style": {
+						"navigationBarTitleText": "新增会议纪要"
+					}
+				},
+				{
+					"path": "attendancestatistics/Index",
+					"style": {
+						"navigationBarTitleText": "考勤统计",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "attendancestatisticsdetail/Index",
+					"style": {
+						"navigationBarTitleText": "轨迹详情",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "historytrajectory/Index",
+					"style": {
+						"navigationBarTitleText": "历史轨迹",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "systemconfig/Index",
+					"style": {
+						"navigationBarTitleText": "系统配置",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "engineeringcenterstaffattendancestatistics/Index",
+					"style": {
+						"navigationBarTitleText": "工程中心人员实时考勤统计",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "dailyweeksummaryreport/Index",
+					"style": {
+						"navigationBarTitleText": "行为规范报表",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "prjmoji/Index",
+					"style": {
+						"navigationBarTitleText": "气象信息",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addprjmoji/Index",
+					"style": {
+						"navigationBarTitleText": "新增气象信息"
+					}
+				},
+				{
+					"path": "contractchange/Index",
+					"style": {
+						"navigationBarTitleText": "合同变更",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addcontractchange/Index",
+					"style": {
+						"navigationBarTitleText": "新增合同变更"
+					}
+				},
+				{
+					"path": "projectchange/Index",
+					"style": {
+						"navigationBarTitleText": "项目变更",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addprojectchange/Index",
+					"style": {
+						"navigationBarTitleText": "新增项目变更"
+					}
+				},
+				{
+					"path": "aftersalemanage/Index",
+					"style": {
+						"navigationBarTitleText": "售后列表",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "aftersaledevice/Index",
+					"style": {
+						"navigationBarTitleText": "售后设备列表",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "updateaftersaledevice/Index",
+					"style": {
+						"navigationBarTitleText": "修改售后设备"
+					}
+				},
+				{
+					"path": "updatecompinfo/Index",
+					"style": {
+						"navigationBarTitleText": "修改"
+					}
+				},
+				{
+					"path": "addaftersalesinfo/Index",
+					"style": {
+						"navigationBarTitleText": "新增售后"
+					}
+				},
+				{
+					"path": "prjreport/Index",
+					"style": {
+						"navigationBarTitleText": "项目报表",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "debugreport/Index",
+					"style": {
+						"navigationBarTitleText": "调试报表",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "aftersalereport/Index",
+					"style": {
+						"navigationBarTitleText": "售后报表",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "aftersalereason/Index",
+					"style": {
+						"navigationBarTitleText": "售后原因",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addaftersalereason/Index",
+					"style": {
+						"navigationBarTitleText": "新增售后原因"
+					}
+				},
+				{
+					"path": "aftersalesninfo/Index",
+					"style": {
+						"navigationBarTitleText": "售后设备详情",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "updaterenames/Index",
+					"style": {
+						"navigationBarTitleText": "修改售后原因"
+					}
+				},
+				{
+					"path": "updateaftersalemanu/Index",
+					"style": {
+						"navigationBarTitleText": "修改售后设备"
+					}
+				},
+				{
+					"path": "groupmanage/Index",
+					"style": {
+						"navigationBarTitleText": "项目分组管理",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "addprojectgroup/Index",
+					"style": {
+						"navigationBarTitleText": "新增项目分组"
+					}
+				},
+				{
+					"path": "auditmanage/Index",
+					"style": {
+						"navigationBarTitleText": "审核管理",
+						"enablePullDownRefresh": true,
+						"backgroundTextStyle": "dark"
+					}
+				},
+				{
+					"path": "awarduser/Index",
+					"style": {
+						"navigationBarTitleText": "技能等级"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTitleText": "领祺项目管理",
+		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"navigationStyle": "custom"
+	},
+	"tabBar": {
+		"custom": true,
+		"height": "0",
+		"color": "#BFBFBF",
+		"selectedColor": "#0165FF",
+		"list": [
+			{
+				"pagePath": "pages/index"
+			},
+			{
+				"pagePath": "pages/project"
+			},
+			{
+				"pagePath": "pages/attendance"
+			},
+			{
+				"pagePath": "pages/map"
+			},
+			{
+				"pagePath": "pages/me"
+			}
+		]
+	}
+}
