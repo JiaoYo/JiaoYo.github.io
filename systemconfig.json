@@ -1,0 +1,38 @@
+{
+    "logModel": {
+        "0": "KERN",
+        "1": "USER",
+        "2": "MAIL",
+        "3": "DAEMON",
+        "4": "AUTH",
+        "5": "SYSYLOG",
+        "6": "LPR",
+        "7": "NEWS",
+        "8": "UUCP",
+        "9": "CRON",
+        "10": "AUTHPRIV",
+        "11": "FTP",
+        "12": "RESERVED_12",
+        "13": "RESERVED_13",
+        "14": "RESERVED_14",
+        "15": "RESERVED_15",
+        "16": "LOCAL0",
+        "17": "LOCAL1",
+        "18": "LOCAL2",
+        "19": "LOCAL3",
+        "20": "LOCAL4",
+        "21": "LOCAL5",
+        "22": "LOCAL6",
+        "23": "LOCAL7"
+    },
+    "logLevel": {
+        "0": "EMERGENCY",
+        "1": "ALERT",
+        "2": "CRITICAL",
+        "3": "ERROR",
+        "4": "WARNING",
+        "5": "NOTICE",
+        "6": "INFO",
+        "7": "DEBUG"
+    }
+}
