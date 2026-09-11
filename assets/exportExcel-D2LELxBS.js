@@ -1,0 +1,1 @@
+import{u as o,w as x}from"./xlsx-DjuO7_Ju.js";function f(a,s,i="text-file",r="text-sheet"){const e=o.json_to_sheet(a),n=o.book_new();for(const t in e)e.hasOwnProperty(t)&&s[e[t].v]&&(e[t].v=s[e[t].v]);o.book_append_sheet(n,e,r),x(n,i+".xlsx")}export{f as e};
