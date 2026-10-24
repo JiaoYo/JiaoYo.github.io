@@ -1,0 +1,1 @@
+import{S as o,b as t,o as n,e as r}from"./index-CKNDbQIr.js";const i={class:"inline-block",viewBox:"0 0 24 24",width:"1em",height:"1em"};function a(c,e){return n(),t("svg",i,e[0]||(e[0]=[r("path",{fill:"currentColor",d:"M15 3v4.59L7.59 15H3v6h6v-4.58L16.42 9H21V3m-4 2h2v2h-2M5 17h2v2H5"},null,-1)]))}const s=o({name:"mdi-vector-line",render:a});export{s as I};
