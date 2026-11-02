@@ -1,0 +1,13 @@
+[Unit]
+Description=Shutdown Event Monitor
+DefaultDependencies=no
+Before=shutdown.target reboot.target halt.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/true
+ExecStop=/usr/bin/logger -t "SystemEvent" "System shutdown success"
+TimeoutStopSec=0
+
+[Install]
+WantedBy=halt.target reboot.target shutdown.target

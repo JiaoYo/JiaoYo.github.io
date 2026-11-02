@@ -1,0 +1,5 @@
+-w /usr/bin/dpkg -p x -k pkg_manage
+-w /usr/bin/apt -p x -k pkg_manage
+-w /usr/bin/apt-get -p x -k pkg_manage
+-w /usr/bin/snap -p x -k pkg_manage
+
