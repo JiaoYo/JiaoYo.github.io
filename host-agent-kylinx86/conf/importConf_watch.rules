@@ -1,2 +1,0 @@
--w /opt/config -p wa -k importConf_watch
--w /opt/mainDir -p wa -k mainDir_watch
