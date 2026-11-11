@@ -1,0 +1,114 @@
+{
+  "id": "2338481",
+  "name": "智慧电力运维平台",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19374220",
+      "name": "能源",
+      "font_class": "nengyuan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11464298",
+      "name": "光伏板",
+      "font_class": "guangfuban",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "11858522",
+      "name": "燃气",
+      "font_class": "ranqi",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "12155034",
+      "name": "lightningbshandian",
+      "font_class": "lightningbshandian",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "5311381",
+      "name": "负荷",
+      "font_class": "fuhe",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "15396880",
+      "name": "task",
+      "font_class": "task",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "9002908",
+      "name": "fa-table",
+      "font_class": "fa-table",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "3278360",
+      "name": "电站信息",
+      "font_class": "dianzhanxinxi",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "1517497",
+      "name": "bingtu",
+      "font_class": "bingtu",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "1881560",
+      "name": "数据集成",
+      "font_class": "shujujicheng",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "3907631",
+      "name": "装机容量",
+      "font_class": "zhuangjirongliang",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "6590930",
+      "name": "数据集成",
+      "font_class": "shujujicheng1",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "16603075",
+      "name": "dianzhan",
+      "font_class": "dianzhan",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "18224279",
+      "name": "网络管理-监控",
+      "font_class": "jiankong-4",
+      "unicode": "e840",
+      "unicode_decimal": 59456
+    },
+    {
+      "icon_id": "14317350",
+      "name": "chaobiaoxunjian",
+      "font_class": "chaobiaoxunjian",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}

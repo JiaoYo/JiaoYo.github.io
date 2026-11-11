@@ -1,0 +1,1180 @@
+.innerContainer::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.innerContainer::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    // background-color: #7993a8;
+}
+
+.innerbox {
+    overflow: auto;
+}
+
+.innerbox::-webkit-scrollbar {
+    width: 4px;
+
+    height: 4px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.innerbox::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    // background-color: #7993a8;
+}
+
+.hiddenScroll {
+    overflow-y: scroll;
+}
+
+.hiddenScroll::-webkit-scrollbar {
+    width: 0;
+}
+
+// /deep/.ant-table > .ant-table-content > .ant-table-scroll > .ant-table-body {
+//     overflow-y: auto !important;
+// }
+
+.ant-select-tree-dropdown .ant-select-dropdown-search {
+    display: block !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+    padding: 4px !important;
+    background: #071a38 !important;
+}
+
+.ant-select-tree-dropdown .ant-select-dropdown-search .ant-select-search__field {
+    height: 30px !important;
+    color: #d7f8ff !important;
+    background: #071a38 !important;
+    border: 1px solid rgba(215, 248, 255, .75) !important;
+    border-radius: 2px !important;
+    box-shadow: none !important;
+}
+
+.ant-select-tree-dropdown .ant-select-dropdown-search .ant-select-search__field:focus {
+    border-color: #30d6d7 !important;
+    box-shadow: 0 0 0 1px rgba(48, 214, 215, .22) !important;
+}
+
+// TreeSelect 下拉框：搜索栏固定为第一行，树列表独立滚动，避免节点文字穿过搜索栏。
+body .ant-select-dropdown.ant-select-tree-dropdown {
+    height: 260px !important;
+    max-height: 260px !important;
+    padding: 8px 4px 4px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+body .ant-select-tree-dropdown [role='listbox'] {
+    display: grid !important;
+    grid-template-rows: 38px minmax(0, 1fr);
+    height: 100%;
+    overflow: hidden;
+}
+
+body .ant-select-tree-dropdown .ant-select-dropdown-search {
+    position: static !important;
+    grid-row: 1;
+}
+
+body .ant-select-tree-dropdown .ant-select-tree {
+    grid-row: 2;
+    min-height: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    scrollbar-color: #25c8cf #071a38;
+    scrollbar-width: thin;
+}
+
+body .plant-department-tree-dropdown .ant-select-tree::-webkit-scrollbar {
+    width: 8px !important;
+    background: #071a38 !important;
+}
+
+body .plant-department-tree-dropdown .ant-select-tree::-webkit-scrollbar-track,
+body .plant-department-tree-dropdown .ant-select-tree::-webkit-scrollbar-track-piece {
+    background: #071a38 !important;
+    border: 2px solid #071a38 !important;
+    border-radius: 8px !important;
+}
+
+body .plant-department-tree-dropdown .ant-select-tree::-webkit-scrollbar-thumb {
+    min-height: 32px !important;
+    background: linear-gradient(180deg, #66f3ec, #25c8cf 55%, #158ab1) !important;
+    border: 2px solid #071a38 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 5px rgba(37, 200, 207, .5) !important;
+}
+
+// 其他 TreeSelect 下拉框也复用相同滚动条，避免弹框内恢复默认白色轨道。
+body .ant-select-tree-dropdown .ant-select-tree {
+    scrollbar-color: #25c8cf #071a38 !important;
+    scrollbar-width: thin !important;
+}
+
+body .ant-select-tree-dropdown .ant-select-tree::-webkit-scrollbar {
+    width: 8px !important;
+    background: #071a38 !important;
+}
+
+body .ant-select-tree-dropdown .ant-select-tree::-webkit-scrollbar-track,
+body .ant-select-tree-dropdown .ant-select-tree::-webkit-scrollbar-track-piece {
+    background: #071a38 !important;
+    border: 2px solid #071a38 !important;
+    border-radius: 8px !important;
+}
+
+body .ant-select-tree-dropdown .ant-select-tree::-webkit-scrollbar-thumb {
+    min-height: 32px !important;
+    background: linear-gradient(180deg, #66f3ec, #25c8cf 55%, #158ab1) !important;
+    border: 2px solid #071a38 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 5px rgba(37, 200, 207, .5) !important;
+}
+
+// TreeSelect 的节点文字不继承普通 Select 的菜单项样式，需单独设定，
+// 否则默认深灰色文字会在深色下拉面板上几乎不可见。
+body .ant-select-dropdown.ant-select-tree-dropdown {
+    color: #d7f8ff !important;
+    padding: 8px 4px 4px !important;
+
+    .ant-select-tree,
+    .ant-select-tree li,
+    .ant-select-tree li .ant-select-tree-node-content-wrapper,
+    .ant-select-tree li .ant-select-tree-node-content-wrapper span,
+    .ant-select-tree li span.ant-select-tree-switcher,
+    .ant-select-tree li span.ant-select-tree-iconEle {
+        color: #d7f8ff !important;
+    }
+
+    .ant-select-tree li .ant-select-tree-node-content-wrapper:hover,
+    .ant-select-tree li .ant-select-tree-node-content-wrapper.ant-select-tree-node-selected {
+        color: #ffffff !important;
+        background: rgba(32, 205, 208, .24) !important;
+    }
+
+    .ant-select-tree-checkbox-inner {
+        background: #071a38 !important;
+        border-color: #38d8d9 !important;
+    }
+
+    .ant-select-tree-checkbox-checked .ant-select-tree-checkbox-inner,
+    .ant-select-tree-checkbox-indeterminate .ant-select-tree-checkbox-inner {
+        background: #30d6d7 !important;
+        border-color: #30d6d7 !important;
+    }
+}
+
+// 全局级联面板：省市区等 Cascader 统一使用系统深色主题。
+body .ant-cascader-menus {
+    background: #071a38 !important;
+    border: 1px solid rgba(42, 221, 222, .75) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .48) !important;
+
+    .ant-cascader-menu {
+        background: #071a38 !important;
+        border-right-color: rgba(42, 221, 222, .3) !important;
+        scrollbar-color: #25c8cf #071a38;
+        scrollbar-width: thin;
+    }
+
+    .ant-cascader-menu-item {
+        color: #d7f8ff !important;
+        background: transparent !important;
+    }
+
+    .ant-cascader-menu-item:hover,
+    .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+    .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover,
+    .ant-cascader-menu-item-selected:not(.ant-cascader-menu-item-disabled) {
+        color: #fff !important;
+        background: rgba(32, 205, 208, .22) !important;
+    }
+
+    .ant-cascader-menu-item-expand-icon,
+    .ant-cascader-menu-item-loading-icon {
+        color: #8eeeed !important;
+    }
+
+    .ant-cascader-menu::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .ant-cascader-menu::-webkit-scrollbar-track {
+        background: #071a38;
+    }
+
+    .ant-cascader-menu::-webkit-scrollbar-thumb {
+        background: #25c8cf;
+        border: 2px solid #071a38;
+        border-radius: 8px;
+    }
+}
+
+// 项目管理左侧树的复选框，避免 Ant Design 默认白底破坏深色界面。
+body .siteContainer .ant-tree-checkbox-inner {
+    background: #071a38 !important;
+    border-color: #70e9e7 !important;
+}
+
+body .siteContainer .ant-tree-checkbox:hover .ant-tree-checkbox-inner,
+body .siteContainer .ant-tree-checkbox-input:focus + .ant-tree-checkbox-inner {
+    border-color: #30d6d7 !important;
+    box-shadow: 0 0 0 2px rgba(48, 214, 215, .16) !important;
+}
+
+body .siteContainer .ant-tree-checkbox-checked .ant-tree-checkbox-inner,
+body .siteContainer .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner {
+    background: #30d6d7 !important;
+    border-color: #30d6d7 !important;
+}
+
+body .siteContainer .ant-tree-checkbox-indeterminate .ant-tree-checkbox-inner::after {
+    background: #071a38 !important;
+}
+
+// 保留原生 number 输入框的增减按钮，同时要求浏览器按深色控件渲染，
+// 避免默认白色按钮区破坏深色界面。
+body input[type='number'] {
+    color-scheme: dark;
+}
+
+// 全系统统一站点选择（v-selectpage）下拉面板主题；下拉层挂到 body，必须使用全局选择器。
+.v-dropdown-container {
+    color: #d7f8ff !important;
+    background: #071a38 !important;
+    border: 1px solid rgba(42, 221, 222, .75) !important;
+    border-radius: 0 0 6px 6px !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .48) !important;
+
+    .sp-header,
+    .sp-result,
+    .sp-list,
+    .sp-content,
+    input,
+    .sp-search,
+    .sp-result-area,
+    .sp-pagination,
+    ul.sp-results {
+        color: #d7f8ff !important;
+        background: #071a38 !important;
+    }
+
+    .sp-search {
+        padding: 10px !important;
+        border-bottom: 1px solid rgba(56, 224, 222, .2) !important;
+    }
+
+    .sp-search-input {
+        height: 34px !important;
+        padding: 7px 10px !important;
+        color: #e2ffff !important;
+        background: linear-gradient(135deg, #06132c, #0b2850) !important;
+        border: 1px solid rgba(65, 232, 228, .7) !important;
+        border-radius: 4px !important;
+    }
+
+    .sp-result-area {
+        max-height: min(320px, calc(100vh - 150px)) !important;
+        scrollbar-color: #29cbd3 #071a38;
+        scrollbar-width: thin;
+    }
+
+    ul.sp-results li,
+    .sp-result-message,
+    .sp-pagination .sp-page-info,
+    [class*="sp-"] {
+        color: #d7f8ff !important;
+        background-color: transparent !important;
+    }
+
+    ul.sp-results li.sp-over,
+    ul.sp-results li:hover,
+    [class*="sp-"]:hover,
+    .active,
+    .selected {
+        color: #61f4ec !important;
+        background: rgba(32, 205, 208, .2) !important;
+    }
+
+    &::-webkit-scrollbar,
+    *::-webkit-scrollbar {
+        width: 8px !important;
+        height: 8px !important;
+    }
+
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-track-piece,
+    *::-webkit-scrollbar-track,
+    *::-webkit-scrollbar-track-piece {
+        background: #071a38 !important;
+        border: 2px solid #071a38 !important;
+        border-radius: 8px !important;
+    }
+
+    &::-webkit-scrollbar-thumb,
+    *::-webkit-scrollbar-thumb {
+        min-height: 32px !important;
+        background: linear-gradient(180deg, #66f3ec, #25c8cf 55%, #158ab1) !important;
+        border: 2px solid #071a38 !important;
+        border-radius: 8px !important;
+        box-shadow: 0 0 5px rgba(37, 200, 207, .5) !important;
+    }
+}
+
+// SelectPage 实际滚动区域：页面样式可能会覆盖通用 * 选择器，使用完整选择器强制覆盖。
+div.v-dropdown-container div.sp-result-area,
+div.v-dropdown-container ul.sp-results,
+div.v-dropdown-container div.sp-list {
+    scrollbar-color: #25c8cf #071a38 !important;
+    scrollbar-width: thin !important;
+}
+
+div.v-dropdown-container div.sp-result-area::-webkit-scrollbar,
+div.v-dropdown-container ul.sp-results::-webkit-scrollbar,
+div.v-dropdown-container div.sp-list::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+    background: #071a38 !important;
+}
+
+div.v-dropdown-container div.sp-result-area::-webkit-scrollbar-track,
+div.v-dropdown-container div.sp-result-area::-webkit-scrollbar-track-piece,
+div.v-dropdown-container ul.sp-results::-webkit-scrollbar-track,
+div.v-dropdown-container ul.sp-results::-webkit-scrollbar-track-piece,
+div.v-dropdown-container div.sp-list::-webkit-scrollbar-track,
+div.v-dropdown-container div.sp-list::-webkit-scrollbar-track-piece {
+    background: #071a38 !important;
+    border: 2px solid #071a38 !important;
+    border-radius: 8px !important;
+}
+
+div.v-dropdown-container div.sp-result-area::-webkit-scrollbar-thumb,
+div.v-dropdown-container div.sp-result-area::-webkit-scrollbar-thumb:vertical,
+div.v-dropdown-container ul.sp-results::-webkit-scrollbar-thumb,
+div.v-dropdown-container ul.sp-results::-webkit-scrollbar-thumb:vertical,
+div.v-dropdown-container div.sp-list::-webkit-scrollbar-thumb,
+div.v-dropdown-container div.sp-list::-webkit-scrollbar-thumb:vertical {
+    min-height: 32px !important;
+    background: #25c8cf !important;
+    border: 2px solid #071a38 !important;
+    border-radius: 8px !important;
+}
+
+div.v-dropdown-container div.sp-result-area::-webkit-scrollbar-button,
+div.v-dropdown-container ul.sp-results::-webkit-scrollbar-button,
+div.v-dropdown-container div.sp-list::-webkit-scrollbar-button,
+div.v-dropdown-container div.sp-result-area::-webkit-scrollbar-corner,
+div.v-dropdown-container ul.sp-results::-webkit-scrollbar-corner,
+div.v-dropdown-container div.sp-list::-webkit-scrollbar-corner {
+    background: #071a38 !important;
+}
+
+// SelectPage 当前高亮项使用低饱和深青色，覆盖组件默认的大块亮色。
+div.v-dropdown-container ul.sp-results > li.sp-over,
+div.v-dropdown-container ul.sp-results > li:hover {
+    color: #e2ffff !important;
+    background-color: rgba(32, 205, 208, .2) !important;
+    background-image: none !important;
+    box-shadow: inset 3px 0 0 #30d6d7 !important;
+}
+
+div.v-dropdown-container ul.sp-results > li.sp-selected:not(.sp-over) {
+    color: #8eeeed !important;
+    background-color: rgba(32, 205, 208, .1) !important;
+    background-image: none !important;
+}
+
+// Ant Select 下拉层同样挂载到 body，统一为系统深色面板。
+body .ant-select-dropdown {
+    padding: 4px !important;
+    background: #071a38 !important;
+    border: 1px solid rgba(42, 221, 222, .75) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .48) !important;
+
+    .ant-select-dropdown-menu {
+        background: transparent !important;
+    }
+
+    .ant-select-dropdown-menu-item {
+        min-height: 32px !important;
+        padding: 6px 12px !important;
+        color: #d7f8ff !important;
+        background: transparent !important;
+    }
+
+    .ant-select-dropdown-menu-item:hover,
+    .ant-select-dropdown-menu-item-active {
+        color: #fff !important;
+        background: rgba(32, 205, 208, .2) !important;
+    }
+
+    .ant-select-dropdown-menu-item-selected {
+        color: #e2ffff !important;
+        font-weight: 600 !important;
+        background: rgba(32, 205, 208, .2) !important;
+        box-shadow: inset 3px 0 0 #30d6d7 !important;
+    }
+
+    &::-webkit-scrollbar,
+    *::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track,
+    *::-webkit-scrollbar-track {
+        background: #071a38;
+    }
+
+    &::-webkit-scrollbar-thumb,
+    *::-webkit-scrollbar-thumb {
+        background: #25c8cf;
+        border: 2px solid #071a38;
+        border-radius: 8px;
+    }
+}
+
+// 普通 Select 实际滚动的是菜单节点，单独覆盖以避免浏览器默认浅色轨道。
+body .ant-select-dropdown .ant-select-dropdown-menu {
+    scrollbar-color: #25c8cf #071a38 !important;
+    scrollbar-width: thin !important;
+}
+
+body .ant-select-dropdown .ant-select-dropdown-menu::-webkit-scrollbar {
+    width: 8px !important;
+    background: #071a38 !important;
+}
+
+body .ant-select-dropdown .ant-select-dropdown-menu::-webkit-scrollbar-track,
+body .ant-select-dropdown .ant-select-dropdown-menu::-webkit-scrollbar-track-piece {
+    background: #071a38 !important;
+    border: 2px solid #071a38 !important;
+    border-radius: 8px !important;
+}
+
+body .ant-select-dropdown .ant-select-dropdown-menu::-webkit-scrollbar-thumb {
+    min-height: 32px !important;
+    background: linear-gradient(180deg, #66f3ec, #25c8cf 55%, #158ab1) !important;
+    border: 2px solid #071a38 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 5px rgba(37, 200, 207, .5) !important;
+}
+
+// 日期选择器的浮层同样挂载到 body，覆盖 Ant Design 默认白色日历。
+body .ant-calendar-picker-input.ant-input {
+    color: #d7f8ff !important;
+    background: #071a38 !important;
+    border-color: rgba(215, 248, 255, .75) !important;
+}
+
+body .ant-calendar-picker-input.ant-input:focus {
+    border-color: #16dfe0 !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar,
+body .ant-calendar-picker-container .ant-calendar-range {
+    color: #d7f8ff !important;
+    background: #071a38 !important;
+    border: 1px solid rgba(42, 221, 222, .75) !important;
+    border-radius: 4px !important;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .48) !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-header,
+body .ant-calendar-picker-container .ant-calendar-input-wrap,
+body .ant-calendar-picker-container .ant-calendar-footer,
+body .ant-calendar-picker-container .ant-calendar-footer-btn {
+    color: #d7f8ff !important;
+    background: #071a38 !important;
+    border-color: rgba(42, 221, 222, .25) !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-input {
+    box-sizing: border-box !important;
+    display: block !important;
+    width: 100% !important;
+    height: 30px !important;
+    color: #d7f8ff !important;
+    background: #061630 !important;
+    border: 1px solid rgba(31, 214, 220, .88) !important;
+    border-radius: 2px !important;
+    box-shadow: inset 0 1px 0 rgba(131, 255, 255, .08) !important;
+}
+
+// 年份/月份弹层顶部采用独立的紧凑输入工具栏，避免输入框与导航栏边线重叠。
+body .ant-calendar-picker-container .ant-calendar-input-wrap {
+    box-sizing: border-box !important;
+    height: 42px !important;
+    padding: 6px 10px !important;
+    background: linear-gradient(180deg, #0b2141, #081a35) !important;
+    border-bottom: 1px solid rgba(42, 221, 222, .34) !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-date,
+body .ant-calendar-picker-container .ant-calendar-column-header,
+body .ant-calendar-picker-container .ant-calendar-header a {
+    color: #c9f8fa !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-date:hover,
+body .ant-calendar-picker-container .ant-calendar-selected-day .ant-calendar-date {
+    color: #071a38 !important;
+    background: #32d6d7 !important;
+    border-radius: 3px !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-today .ant-calendar-date {
+    color: #61f4ec !important;
+    border-color: #25c8cf !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-last-month-cell .ant-calendar-date,
+body .ant-calendar-picker-container .ant-calendar-next-month-btn-day .ant-calendar-date,
+body .ant-calendar-picker-container .ant-calendar-disabled-cell .ant-calendar-date {
+    color: rgba(174, 218, 226, .35) !important;
+    background: transparent !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-today-btn,
+body .ant-calendar-picker-container .ant-calendar-ok-btn {
+    color: #4de9e7 !important;
+}
+
+// 月份选择面板是独立节点，需单独覆盖默认白底。
+body .ant-calendar-picker-container .ant-calendar-month-panel,
+body .ant-calendar-picker-container .ant-calendar-month-panel-header,
+body .ant-calendar-picker-container .ant-calendar-month-panel-body,
+body .ant-calendar-picker-container .ant-calendar-month-panel-table,
+body .ant-calendar-picker-container .ant-calendar-month-panel-cell {
+    color: #d7f8ff !important;
+    background: #071a38 !important;
+    border-color: rgba(42, 221, 222, .25) !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-month-panel-header a,
+body .ant-calendar-picker-container .ant-calendar-month-panel-month {
+    color: #c9f8fa !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-month-panel-month:hover {
+    color: #fff !important;
+    background: rgba(32, 205, 208, .2) !important;
+    border-radius: 3px !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month {
+    color: #071a38 !important;
+    font-weight: 600 !important;
+    background: #30d6d7 !important;
+    border-radius: 3px !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-month-panel-disabled-cell .ant-calendar-month-panel-month {
+    color: rgba(174, 218, 226, .35) !important;
+    background: #0a1a35 !important;
+    border: 1px solid rgba(108, 163, 177, .13) !important;
+}
+
+// Ant Design Vue 实际使用的是 cell-disabled（而非 disabled-cell）；两种类名同时覆盖。
+body .ant-calendar-picker-container .ant-calendar-month-panel-cell-disabled,
+body .ant-calendar-picker-container .ant-calendar-month-panel-cell-disabled .ant-calendar-month-panel-month,
+body .ant-calendar-picker-container .ant-calendar-month-panel-cell-disabled .ant-calendar-month-panel-month::before,
+body .ant-calendar-picker-container .ant-calendar-month-panel-cell-disabled .ant-calendar-month-panel-month::after {
+    color: rgba(174, 218, 226, .36) !important;
+    background-color: #0a1a35 !important;
+    background-image: none !important;
+    border-color: rgba(108, 163, 177, .13) !important;
+    box-shadow: none !important;
+}
+
+// 年份 / 十年选择面板同样是独立节点，覆盖默认白底与禁用项白块。
+body .ant-calendar-picker-container .ant-calendar-year-panel,
+body .ant-calendar-picker-container .ant-calendar-year-panel-header,
+body .ant-calendar-picker-container .ant-calendar-year-panel-body,
+body .ant-calendar-picker-container .ant-calendar-year-panel-table,
+body .ant-calendar-picker-container .ant-calendar-year-panel-cell,
+body .ant-calendar-picker-container .ant-calendar-decade-panel,
+body .ant-calendar-picker-container .ant-calendar-decade-panel-header,
+body .ant-calendar-picker-container .ant-calendar-decade-panel-body,
+body .ant-calendar-picker-container .ant-calendar-decade-panel-table,
+body .ant-calendar-picker-container .ant-calendar-decade-panel-cell {
+    color: #d7f8ff !important;
+    background: #071a38 !important;
+    border-color: rgba(42, 221, 222, .25) !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-year-panel-header a,
+body .ant-calendar-picker-container .ant-calendar-year-panel-year,
+body .ant-calendar-picker-container .ant-calendar-decade-panel-header a,
+body .ant-calendar-picker-container .ant-calendar-decade-panel-decade {
+    color: #c9f8fa !important;
+    background: transparent !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-year-panel-selected-cell .ant-calendar-year-panel-year,
+body .ant-calendar-picker-container .ant-calendar-decade-panel-selected-cell .ant-calendar-decade-panel-decade {
+    color: #071a38 !important;
+    font-weight: 600 !important;
+    background: #30d6d7 !important;
+    border-radius: 3px !important;
+}
+
+body .ant-calendar-picker-container .ant-calendar-year-panel-cell-disabled,
+body .ant-calendar-picker-container .ant-calendar-year-panel-cell-disabled .ant-calendar-year-panel-year,
+body .ant-calendar-picker-container .ant-calendar-decade-panel-cell-disabled,
+body .ant-calendar-picker-container .ant-calendar-decade-panel-cell-disabled .ant-calendar-decade-panel-decade {
+    color: rgba(174, 218, 226, .36) !important;
+    background: #0a1a35 !important;
+    border-color: rgba(108, 163, 177, .13) !important;
+}
+
+// “全部电表”等 Radio 选择器。
+body .ant-radio-wrapper {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 28px !important;
+    min-width: 38px !important;
+    margin-right: 4px !important;
+    padding: 0 10px !important;
+    color: #d7f8ff !important;
+    line-height: 26px !important;
+    background: #0b1c39 !important;
+    border: 1px solid #146f8d !important;
+    border-radius: 3px !important;
+    transition: all .2s ease !important;
+}
+
+body .ant-radio {
+    display: none !important;
+}
+
+body .ant-radio-wrapper-checked {
+    color: #071a38 !important;
+    font-weight: 600 !important;
+    background: #25c8cf !important;
+    border-color: #25c8cf !important;
+    box-shadow: 0 0 8px rgba(37, 200, 207, .28) !important;
+}
+
+body .ant-radio-inner {
+    background: #071a38 !important;
+    border-color: #36cfd3 !important;
+}
+
+body .ant-radio-checked .ant-radio-inner {
+    background: #25c8cf !important;
+    border-color: #25c8cf !important;
+    box-shadow: 0 0 6px rgba(37, 200, 207, .5) !important;
+}
+
+body .ant-radio-checked::after {
+    border-color: #25c8cf !important;
+}
+
+// 电表统计的“全部电表”使用常规 Radio，避免与日/月/年统计按钮混淆。
+body .meter-all-radio .ant-radio-wrapper {
+    min-width: 0 !important;
+    height: 28px !important;
+    margin-right: 14px !important;
+    padding: 0 !important;
+    color: #d7f8ff !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+body .meter-all-radio .ant-radio {
+    display: inline-block !important;
+    top: 0 !important;
+    margin-right: 6px !important;
+}
+
+body .meter-all-radio .ant-radio-wrapper-checked {
+    color: #25e3e7 !important;
+    font-weight: 400 !important;
+}
+
+body .meter-all-radio .ant-radio-inner {
+    width: 16px !important;
+    height: 16px !important;
+    background: #071a38 !important;
+    border: 2px solid #278ea7 !important;
+    border-radius: 50% !important;
+    transition: all .18s ease !important;
+}
+
+body .meter-all-radio .ant-radio-checked::after {
+    display: none !important;
+}
+
+body .meter-all-radio .ant-radio-checked .ant-radio-inner {
+    background: #25c8cf !important;
+    border-color: #55f3ed !important;
+    box-shadow: 0 0 8px rgba(37, 200, 207, .55) !important;
+}
+
+body .meter-all-radio .ant-radio-checked .ant-radio-inner::after {
+    display: block !important;
+    width: 6px !important;
+    height: 6px !important;
+    top: 3px !important;
+    left: 3px !important;
+    margin: 0 !important;
+    background: #071a38 !important;
+    border-radius: 50% !important;
+    transform: scale(1) !important;
+}
+
+body .ant-select-dropdown .ant-empty-description {
+    color: #86a5bb !important;
+}
+
+body .ant-select-dropdown .ant-empty {
+    margin: 0 !important;
+    padding: 16px 22px !important;
+    background: linear-gradient(135deg, #071a38, #0b2548) !important;
+    border: 1px solid rgba(37, 200, 207, .38) !important;
+    border-radius: 3px !important;
+}
+
+body .ant-select-dropdown .ant-empty-image {
+    height: 30px !important;
+    margin-bottom: 7px !important;
+    opacity: .72 !important;
+    filter: sepia(1) saturate(2) hue-rotate(128deg) !important;
+}
+
+// 常规 Ant Select 的箭头和已选/占位文字不能沿用组件默认深灰色，否则会融入深色底。
+body .ant-select .ant-select-arrow,
+body .ant-select .ant-select-arrow .anticon {
+    color: #c7fffb !important;
+    opacity: 1 !important;
+}
+
+body .ant-select .ant-select-selection__placeholder {
+    color: #9cd9dc !important;
+    opacity: 1 !important;
+}
+
+body .ant-select .ant-select-selection-selected-value {
+    color: #e5ffff !important;
+}
+
+// 全系统选择与输入框的清除图标。
+body .ant-calendar-picker-clear,
+body .ant-select-selection__clear,
+body .ant-input-clear-icon,
+body .ant-cascader-picker-clear {
+    color: #43e8e4 !important;
+    background: #0b1c39 !important;
+    border-radius: 50% !important;
+    opacity: 1 !important;
+}
+
+body .ant-select-selection__clear .anticon,
+body .ant-select-selection__clear .anticon-close-circle,
+body .ant-input-suffix .anticon-close-circle {
+    width: 14px !important;
+    height: 14px !important;
+    color: #43e8e4 !important;
+    line-height: 14px !important;
+    text-align: center !important;
+    background: #0b1c39 !important;
+    border-radius: 50% !important;
+}
+
+body .ant-calendar-picker-clear:hover,
+body .ant-select-selection__clear:hover,
+body .ant-input-clear-icon:hover,
+body .ant-cascader-picker-clear:hover {
+    color: #fff !important;
+    background: #e85f72 !important;
+}
+
+body .ant-select-selection__clear:hover .anticon,
+body .ant-select-selection__clear:hover .anticon-close-circle,
+body .ant-input-suffix .anticon-close-circle:hover {
+    color: #fff !important;
+    background: #e85f72 !important;
+}
+
+// 提高选择框清除按钮优先级，覆盖各页面遗留的默认白色 close-circle 样式。
+body .ant-select.ant-select-allow-clear .ant-select-selection__clear {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin-top: -8px !important;
+    color: #43e8e4 !important;
+    background: #0b1c39 !important;
+    border: 1px solid rgba(67, 232, 228, .45) !important;
+    border-radius: 50% !important;
+    box-shadow: none !important;
+}
+
+body .ant-select.ant-select-allow-clear .ant-select-selection__clear .anticon,
+body .ant-select.ant-select-allow-clear .ant-select-selection__clear .anticon-close-circle {
+    width: auto !important;
+    height: auto !important;
+    color: #43e8e4 !important;
+    font-size: 11px !important;
+    line-height: 1 !important;
+    background: transparent !important;
+}
+
+body .ant-select.ant-select-allow-clear .ant-select-selection__clear:hover {
+    background: #e85f72 !important;
+    border-color: #e85f72 !important;
+}
+
+body .ant-select.ant-select-allow-clear .ant-select-selection__clear:hover .anticon,
+body .ant-select.ant-select-allow-clear .ant-select-selection__clear:hover .anticon-close-circle {
+    color: #fff !important;
+    background: transparent !important;
+}
+
+// 后台三类日志统一分页外观：登录日志、操作日志、异常日志。
+body .log-pagination.log-pagination {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    min-height: 42px !important;
+    padding: 6px 12px !important;
+    color: #c7f7f6 !important;
+    white-space: nowrap !important;
+    background: linear-gradient(90deg, rgba(4, 19, 45, .35), rgba(11, 39, 75, .72)) !important;
+    border-top: 1px solid rgba(54, 178, 204, .34) !important;
+    border-radius: 0 0 7px 7px !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-total-text,
+body .log-pagination.log-pagination .ant-pagination-options-quick-jumper {
+    color: #c7f7f6 !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-item,
+body .log-pagination.log-pagination .ant-pagination-prev .ant-pagination-item-link,
+body .log-pagination.log-pagination .ant-pagination-next .ant-pagination-item-link {
+    box-sizing: border-box !important;
+    width: 32px !important;
+    min-width: 32px !important;
+    max-width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    margin-right: 5px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+    background: #091b38 !important;
+    border: 1px solid #286d8b !important;
+    border-radius: 50% !important;
+    transition: all .18s ease !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-item a,
+body .log-pagination.log-pagination .ant-pagination-prev .ant-pagination-item-link,
+body .log-pagination.log-pagination .ant-pagination-next .ant-pagination-item-link {
+    color: #c7f7f6 !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-item {
+    overflow: hidden !important;
+    font-size: 12px !important;
+    letter-spacing: normal !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-jump-prev,
+body .log-pagination.log-pagination .ant-pagination-jump-next {
+    display: inline-block !important;
+    margin-right: 5px !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-jump-prev .ant-pagination-item-ellipsis,
+body .log-pagination.log-pagination .ant-pagination-jump-next .ant-pagination-item-ellipsis {
+    color: #72e9ea !important;
+    letter-spacing: 2px !important;
+    opacity: 1 !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-item:hover,
+body .log-pagination.log-pagination .ant-pagination-prev:not(.ant-pagination-disabled):hover .ant-pagination-item-link,
+body .log-pagination.log-pagination .ant-pagination-next:not(.ant-pagination-disabled):hover .ant-pagination-item-link {
+    border-color: #36dfe0 !important;
+    box-shadow: 0 0 8px rgba(54, 223, 224, .28) !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-item-active {
+    background: linear-gradient(135deg, #26d7d2, #35bde7) !important;
+    border-color: #3ce8e2 !important;
+    box-shadow: 0 0 9px rgba(38, 215, 210, .35) !important;
+    border-radius: 50% !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-item-active a {
+    color: #06172f !important;
+    font-weight: 600 !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-disabled .ant-pagination-item-link {
+    color: rgba(183, 229, 234, .35) !important;
+    background: #07152d !important;
+    border-color: rgba(40, 109, 139, .38) !important;
+    box-shadow: none !important;
+}
+
+body .log-pagination.log-pagination .ant-select-selection,
+body .log-pagination.log-pagination .ant-pagination-options-quick-jumper input {
+    height: 30px !important;
+    color: #d7f8ff !important;
+    background: #091b38 !important;
+    border: 1px solid #286d8b !important;
+    border-radius: 15px !important;
+}
+
+body .log-pagination.log-pagination .ant-pagination-options-size-changer .ant-select-selection__rendered {
+    line-height: 26px !important;
+}
+
+body .log-pagination.log-pagination .ant-select-arrow {
+    color: #55e7e4 !important;
+}
+
+// 供系统配置与项目管理页面覆盖其各自 scoped 分页样式。
+body .log-pagination.log-pagination.log-pagination .ant-pagination-item,
+body .log-pagination.log-pagination.log-pagination .ant-pagination-prev .ant-pagination-item-link,
+body .log-pagination.log-pagination.log-pagination .ant-pagination-next .ant-pagination-item-link {
+    width: 32px !important;
+    min-width: 32px !important;
+    max-width: 32px !important;
+    height: 32px !important;
+    padding: 0 !important;
+    color: #c7f7f6 !important;
+    line-height: 30px !important;
+    background: rgba(13, 40, 77, .76) !important;
+    border: 1px solid rgba(63, 169, 202, .48) !important;
+    border-radius: 50% !important;
+}
+
+body .log-pagination.log-pagination.log-pagination .ant-pagination-item-active {
+    background: linear-gradient(135deg, #26d7d2, #35bde7) !important;
+    border-color: #3ce8e2 !important;
+}
+
+body .log-pagination.log-pagination.log-pagination .ant-pagination-item-active a {
+    color: #06172f !important;
+}
+
+body .log-pagination.log-pagination.log-pagination .ant-pagination-options-size-changer .ant-select-selection,
+body .log-pagination.log-pagination.log-pagination .ant-pagination-options-quick-jumper input {
+    height: 30px !important;
+    color: #d7fbff !important;
+    background: rgba(6, 24, 55, .9) !important;
+    border-color: rgba(63, 169, 202, .62) !important;
+    border-radius: 15px !important;
+}
+
+// 空表格占位保持深色，避免 Ant Table / VXE Table 默认白底。
+body .ant-table-placeholder,
+body .ant-empty,
+body .vxe-table .vxe-table--body-wrapper,
+body .vxe-table .vxe-table--empty-block,
+body .vxe-table .vxe-table--empty-placeholder {
+    color: #86a5bb !important;
+    background: #040927 !important;
+    border-color: #126d90 !important;
+}
+
+body .ant-table-placeholder .ant-empty-description,
+body .ant-empty-description,
+body .vxe-table .vxe-table--empty-content {
+    color: #86a5bb !important;
+}
+
+// 全站统一分页：与集控中心一致的圆形页码、青色当前页和深色控件。
+body .ant-pagination.ant-pagination {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 44px;
+    margin: 0 !important;
+    padding: 8px 12px;
+    color: #d7f8ff !important;
+    background: rgba(5, 26, 61, .82);
+    border-top: 1px solid rgba(43, 183, 206, .28);
+    border-radius: 0 0 7px 7px;
+}
+
+body .ant-pagination.ant-pagination .ant-pagination-total-text,
+body .ant-pagination.ant-pagination .ant-pagination-options-quick-jumper {
+    color: #d7f8ff !important;
+    font-size: 14px !important;
+}
+
+body .ant-pagination.ant-pagination .ant-pagination-item,
+body .ant-pagination.ant-pagination .ant-pagination-prev .ant-pagination-item-link,
+body .ant-pagination.ant-pagination .ant-pagination-next .ant-pagination-item-link {
+    box-sizing: border-box !important;
+    width: 30px !important;
+    min-width: 30px !important;
+    height: 30px !important;
+    margin-right: 6px !important;
+    color: #d7f8ff !important;
+    font-size: 14px !important;
+    line-height: 28px !important;
+    text-align: center;
+    background: transparent !important;
+    border: 1px solid #1b658d !important;
+    border-radius: 50% !important;
+    transition: all .18s ease !important;
+}
+
+body .ant-pagination.ant-pagination .ant-pagination-item a,
+body .ant-pagination.ant-pagination .ant-pagination-prev .ant-pagination-item-link,
+body .ant-pagination.ant-pagination .ant-pagination-next .ant-pagination-item-link,
+body .ant-pagination.ant-pagination .ant-pagination-jump-prev .ant-pagination-item-ellipsis,
+body .ant-pagination.ant-pagination .ant-pagination-jump-next .ant-pagination-item-ellipsis {
+    color: #d7f8ff !important;
+}
+
+body .ant-pagination.ant-pagination .ant-pagination-item-active {
+    background: linear-gradient(135deg, #45eee3, #28b6dd) !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 10px rgba(51, 224, 224, .35) !important;
+}
+
+body .ant-pagination.ant-pagination .ant-pagination-item-active a {
+    color: #04172e !important;
+    font-weight: 700 !important;
+}
+
+body .ant-pagination.ant-pagination .ant-pagination-item:hover,
+body .ant-pagination.ant-pagination .ant-pagination-prev:not(.ant-pagination-disabled):hover .ant-pagination-item-link,
+body .ant-pagination.ant-pagination .ant-pagination-next:not(.ant-pagination-disabled):hover .ant-pagination-item-link {
+    border-color: #4eece7 !important;
+    box-shadow: 0 0 8px rgba(54, 223, 224, .3) !important;
+}
+
+body .ant-pagination.ant-pagination .ant-pagination-options-size-changer .ant-select-selection,
+body .ant-pagination.ant-pagination .ant-pagination-options-quick-jumper input {
+    height: 30px !important;
+    color: #d7f8ff !important;
+    font-size: 14px !important;
+    background: #06162e !important;
+    border: 1px solid #1b658d !important;
+    border-radius: 15px !important;
+}
+
+body .ant-pagination.ant-pagination .ant-pagination-options-size-changer .ant-select-selection__rendered {
+    line-height: 28px !important;
+}
+
+body .ant-pagination.ant-pagination .ant-select-arrow {
+    color: #6bf4ec !important;
+}
+
+// 统一所有表格的滚动条：集控中心同款深蓝轨道 + 青色渐变滑块。
+// VXE 4 的实际可见滚动条位于 scroll-*-handle；Ant 表格则位于 body 包装层。
+body .vxe-table .vxe-table--scroll-x-handle,
+body .vxe-table .vxe-table--scroll-y-handle,
+body .ant-table-body,
+body .ant-table-content,
+body .ant-table-fixed-left .ant-table-body,
+body .ant-table-fixed-right .ant-table-body {
+    scrollbar-color: #28d5dc #06162e !important;
+    scrollbar-width: thin !important;
+}
+
+body .vxe-table .vxe-table--scroll-x-handle::-webkit-scrollbar,
+body .vxe-table .vxe-table--scroll-y-handle::-webkit-scrollbar,
+body .ant-table-body::-webkit-scrollbar,
+body .ant-table-content::-webkit-scrollbar,
+body .ant-table-fixed-left .ant-table-body::-webkit-scrollbar,
+body .ant-table-fixed-right .ant-table-body::-webkit-scrollbar {
+    display: block !important;
+    width: 10px !important;
+    height: 10px !important;
+    background: #06162e !important;
+}
+
+body .vxe-table .vxe-table--scroll-x-handle::-webkit-scrollbar-track,
+body .vxe-table .vxe-table--scroll-y-handle::-webkit-scrollbar-track,
+body .ant-table-body::-webkit-scrollbar-track,
+body .ant-table-content::-webkit-scrollbar-track,
+body .ant-table-fixed-left .ant-table-body::-webkit-scrollbar-track,
+body .ant-table-fixed-right .ant-table-body::-webkit-scrollbar-track,
+body .vxe-table .vxe-table--scroll-x-handle::-webkit-scrollbar-track-piece,
+body .vxe-table .vxe-table--scroll-y-handle::-webkit-scrollbar-track-piece,
+body .ant-table-body::-webkit-scrollbar-track-piece,
+body .ant-table-content::-webkit-scrollbar-track-piece {
+    background: #06162e !important;
+    border: 2px solid #06162e !important;
+    border-radius: 8px !important;
+}
+
+body .vxe-table .vxe-table--scroll-x-handle::-webkit-scrollbar-thumb,
+body .vxe-table .vxe-table--scroll-y-handle::-webkit-scrollbar-thumb,
+body .ant-table-body::-webkit-scrollbar-thumb,
+body .ant-table-content::-webkit-scrollbar-thumb,
+body .ant-table-fixed-left .ant-table-body::-webkit-scrollbar-thumb,
+body .ant-table-fixed-right .ant-table-body::-webkit-scrollbar-thumb {
+    min-height: 38px !important;
+    background: linear-gradient(180deg, #69f5ed 0%, #29cbd3 52%, #157ba8 100%) !important;
+    border: 2px solid #06162e !important;
+    border-radius: 8px !important;
+    box-shadow: 0 0 6px rgba(53, 230, 223, .45) !important;
+}
+
+body .vxe-table .vxe-table--scroll-x-handle::-webkit-scrollbar-corner,
+body .vxe-table .vxe-table--scroll-y-handle::-webkit-scrollbar-corner,
+body .ant-table-body::-webkit-scrollbar-corner,
+body .ant-table-content::-webkit-scrollbar-corner {
+    background: #06162e !important;
+}
+
+// 项目管理切换采集器/设备/视频页时，VXE 会先挂载 loading 遮罩。
+// 组件库默认遮罩是白色；使用全局高优先级选择器，避免被运行时样式覆盖。
+body .siteContainer .ant-tabs-content,
+body .siteContainer .ant-tabs-tabpane,
+body .siteContainer .vxe-loading,
+body .siteContainer .vxe-loading.is--visible,
+body .siteContainer .vxe-loading.theme--primary {
+    background-color: #040927 !important;
+}
+
+body .siteContainer .vxe-loading .vxe-loading--spinner::before,
+body .siteContainer .vxe-loading .vxe-loading--spinner::after {
+    background-color: #21cbd3 !important;
+}
+
+// /deep/.ant-table-body {
+//     &::-webkit-scrollbar {
+//         width: 5px;
+//         height: 5px;
+//     }
+
+//     &::-webkit-scrollbar-thumb {
+//         border-radius: 5px;
+//         -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+//         background: #7993a8;
+//     }
+
+//     &::-webkit-scrollbar-track {
+//         -webkit-box-shadow: 0;
+//         border-radius: 0;
+//         background: #191f28;
+//     }
+// }
