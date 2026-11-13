@@ -1,0 +1,1 @@
+import{aw as o}from"./index-Bnhp4IIx.js";function e(){return o({url:"/history/config",method:"get"})}function n(t){return o({url:"/history/config",method:"put",data:t})}function i(t){return o({url:"/history/cleanup",method:"post",data:t})}export{n as a,i as b,e as f};

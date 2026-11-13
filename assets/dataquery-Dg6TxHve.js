@@ -1,0 +1,1 @@
+import{aw as t,ax as e}from"./index-Bnhp4IIx.js";function i(o,r=""){return t({url:r?e(r,"/history/query.do"):"/history/query.do",method:"get",params:o})}function u(o){return t({url:"/history/export.do",method:"get",params:o,responseType:"blob"})}function n(o){return t({url:"/history/income.do",method:"get",params:o})}export{u as D,i as G,n as a};
