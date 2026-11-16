@@ -1,131 +1,20 @@
-<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=description content=""><meta name=renderer content=ie-comp><meta http-equiv=X-UA-Compatible content="ie=edge"><link rel="shortcut icon" href=favicon.ico type=image/x-icon><link rel=stylesheet href=font/iconfont.css><style>.amap-logo {
-            display: none !important;
-        }
-
-        .amap-copyright {
-            bottom: -100px;
-            display: none;
-        }
-
-        .BMap_cpyCtrl {
-            display: none;
-        }
-
-        .anchorBL {
-            display: none;
-        }
-
-        .el-cascader-menu {
-            overflow: hidden !important;
-            height: 260px !important;
-        }
-
-        .el-cascader {
-            width: 100% !important;
-        }
-
-        .el-cascader-menu .el-scrollbar__wrap {
-            overflow-x: auto !important;
-        }
-
-        .el-dialog {
-            padding-right: 30px;
-        }
-
-        .el-slider__marks-text {
-            width: 30px;
-            font-size: 12px !important;
-        }
-
-        .el-popover {
-            max-height: 500px !important;
-            overflow-y: auto !important;
-            overflow-x: hidden !important;
-        }
-
-        .el-select-dropdown .el-scrollbar__wrap {
-            margin: 0 !important;
-        }
-
-        .el-select-dropdown .el-scrollbar__wrap::-webkit-scrollbar {
-            display: none;
-            overflow: hidden;
-        }
-
-        .el-tooltip__popper {
-            max-width: 80%;
-            max-height: 600px;
-            overflow-y: auto;
-            padding-bottom: 5px !important;
-        }
-
-        .el-tooltip__popper::-webkit-scrollbar {
-            display: none;
-        }
-
-        /* .el-popover::-webkit-scrollbar {
-            display: none;
-        } */
-
-        #pythonCodemirrorWrap .CodeMirror {
-            font-family: 'Consolas', 'Arial', '微软雅黑';
-            font-size: 14px;
-            height: calc(100vh - 106px) !important;
-        }
-
-        .tdt-control-copyright {
-            display: none !important;
-        }
-
-        .custom-compound-input {
-            display: flex;
-            border: 1px solid #DCDFE6;
-            border-radius: 4px;
-            overflow: hidden;
-            height: 32px; /* 设置高度 */
-            align-items: center;
-            line-height: 32px;
-            margin-top: 4px;
-        }
-
-        .custom-compound-input .left-input,
-        .custom-compound-input .right-input {
-            flex: 1;
-        }
-
-        .custom-compound-input .middle-select {
-            width: 80px;
-            border-left: 1px solid #DCDFE6;
-            border-right: 1px solid #DCDFE6;
-            border-radius: 0;
-        }
-
-        /* 移除内部边框 */
-        .custom-compound-input .el-input__inner {
-            border: none;
-            border-radius: 0;
-        }
-
-        .coze-app-sdk {
-            box-sizing: border-box; /* 盒模型规则：iframe的宽高会包含内容、内边距和边框，避免添加样式后整体尺寸变大 */
-            padding: 4px;          /* 为iframe内部内容添加4px内边距，避免内容紧贴边缘 */
-        }</style><script src=javascripts/jquery.js></script><script src=javascripts/bootstrap-treeview.js></script><script src=js/luaparse.js></script><script src=js/decimal.js></script><script src=//mapv.baidu.com/build/mapv.min.js></script><script src=https://code.bdstatic.com/npm/mapvgl@1.0.0-beta.189/dist/mapvgl.min.js></script><script src=https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js></script><script>window.SITE_CONFIG = {};
-        window.SITE_CONFIG['version'] = 'v2.0.0';
-        window.SITE_CONFIG['nodeEnv'] = 'prod';
-        window.SITE_CONFIG['apiURL'] = '';                      // api请求地址
-        window.SITE_CONFIG['socketUrl'] = '';                      // webscoket请求地址
-        window.SITE_CONFIG['storeState'] = {};                  // vuex本地储存初始化状态（用于不刷新页面的情况下，也能重置初始化项目中所有状态）
-        window.SITE_CONFIG['contentTabDefault'] = {             // 内容标签页默认属性对象
-            'name': '',        // 名称, 由 this.$route.name 自动赋值（默认，名称 === 路由名称 === 路由路径）
-            'params': {},      // 参数, 由 this.$route.params 自动赋值
-            'query': {},       // 查询参数, 由 this.$route.query 自动赋值
-            'menuId': '',      // 菜单id（用于选中侧边栏菜单，与this.$store.state.sidebarMenuActiveName进行匹配）
-            'title': '',       // 标题
-            'isTab': true,     // 是否通过tab展示内容?
-            'iframeURL': ''    // 是否通过iframe嵌套展示内容? (以http[s]://开头, 自动匹配)
-        };
-        window.SITE_CONFIG['menuList'] = [];                     // 左侧菜单列表（后台返回，未做处理）
-        window.SITE_CONFIG['permissions'] = [];                  // 页面按钮操作权限（后台返回，未做处理）
-        window.SITE_CONFIG['dynamicRoutes'] = [];                // 动态路由列表
-        window.SITE_CONFIG['dynamicMenuRoutes'] = [];            // 动态(菜单)路由列表
-        window.SITE_CONFIG['dynamicMenuRoutesHasAdded'] = false; // 动态(菜单)路由是否已经添加的状态标示（用于判断是否需要重新拉取数据并进行动态添加操作）</script><script>window.SITE_CONFIG['apiURL'] = 'https://dingiiot.com:8092/dingiiot-admin';</script><script>window.SITE_CONFIG['socketUrl'] = 'wss://dingiiot.com:8092/dingiiot-admin/';</script><meta name=buildTime content=2026-11-13T11:28:19.122Z><link href=css/vendors~app.a0d7e847.css rel=stylesheet><link href=css/app.525e529f.css rel=stylesheet></head><body><div id=app></div><script src=js/vendors~app.c25f673a.js></script><script src=js/app.5a89d1a0.js></script></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <title></title>
+    <!--preload-links-->
+    <!--app-context-->
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260">
+  <!-- Interface schematic from PBox6140H 顶部实拍: NET1, NET2, USB, FUN, Console, POWER.
+       Orthographic schematic, not a dimensioned manufacturing drawing. Anchor coordinates use this viewBox. -->
+  <g fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round">
+    <rect x="20" y="58" width="960" height="182" rx="10"/>
+    <g id="net1">
+      <rect x="82" y="90" width="136" height="124" rx="3"/>
+      <path d="M96 110h32v-8h44v8h32v82h-108z M132 184v-14h36v14"/>
+      <path stroke-width="3" d="M110 184v-20m11 20v-20m11 20v-20m11 20v-20m11 20v-20m11 20v-20m11 20v-20m11 20v-20"/>
+    </g>
+    <g id="net2">
+      <rect x="262" y="90" width="136" height="124" rx="3"/>
+      <path d="M276 110h32v-8h44v8h32v82h-108z M312 184v-14h36v14"/>
+      <path stroke-width="3" d="M290 184v-20m11 20v-20m11 20v-20m11 20v-20m11 20v-20m11 20v-20m11 20v-20m11 20v-20"/>
+    </g>
+    <rect x="447" y="91" width="66" height="122" rx="3"/>
+    <rect x="458" y="103" width="14" height="98" rx="2"/>
+    <path stroke-width="3" d="M479 116h20m-20 23h20m-20 23h20m-20 23h20"/>
+    <circle cx="587" cy="170" r="21"/>
+    <rect x="654" y="167" width="92" height="32" rx="16"/>
+    <path d="M672 183h55"/>
+    <path d="M786 105h36v-15h18v15h38v-15h18v15h38v101H786z"/>
+    <path d="M798 119h40v73h-40z M842 119h40v73h-40z M886 119h36v73h-36z"/>
+    <path d="M818 139v28m44-28v28m42-28v28"/>
+  </g>
+  <g fill="#334155" font-family="Arial, Microsoft YaHei, sans-serif" font-size="36" text-anchor="middle">
+    <text x="150" y="38">NET1</text><text x="330" y="38">NET2</text>
+    <text x="480" y="38">USB</text><text x="587" y="38">FUN</text>
+    <text x="700" y="38" font-size="30">Console</text><text x="860" y="38">POWER</text>
+  </g>
+</svg>

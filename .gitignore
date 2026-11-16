@@ -1,0 +1,4 @@
+# dependencies
+node_modules/
+unpackage/
+env.d.ts

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260">
+  <!-- Interface schematic from PBox6140H 底部实拍 and front silkscreen.
+       COM1/2 have two terminals each; COM3/4 have five each. No DIDO anchor is confirmed. -->
+  <g fill="none" stroke="#334155" stroke-width="4" stroke-linejoin="round">
+    <rect x="20" y="58" width="960" height="182" rx="10"/>
+    <rect x="68" y="91" width="116" height="120" rx="3"/>
+    <rect x="188" y="91" width="116" height="120" rx="3"/>
+    <rect x="308" y="91" width="290" height="120" rx="3"/>
+    <rect x="602" y="91" width="290" height="120" rx="3"/>
+    <path stroke-width="3" d="M126 91v120 M246 91v120 M366 91v120m58-120v120m58-120v120m58-120v120 M660 91v120m58-120v120m58-120v120m58-120v120"/>
+    <g stroke-width="3">
+      <path d="M80 147h34v47H80z M138 147h34v47h-34z M200 147h34v47h-34z M258 147h34v47h-34z"/>
+      <path d="M320 147h34v47h-34z M378 147h34v47h-34z M436 147h34v47h-34z M494 147h34v47h-34z M552 147h34v47h-34z"/>
+      <path d="M614 147h34v47h-34z M672 147h34v47h-34z M730 147h34v47h-34z M788 147h34v47h-34z M846 147h34v47h-34z"/>
+      <path d="M82 115h30m28 0h30m32 0h30m28 0h30m32 0h30m28 0h30m28 0h30m28 0h30m28 0h30m32 0h30m28 0h30m28 0h30m28 0h30m28 0h30"/>
+    </g>
+  </g>
+  <g fill="#334155" font-family="Arial, Microsoft YaHei, sans-serif" font-size="36" text-anchor="middle">
+    <text x="126" y="38">COM1</text><text x="246" y="38">COM2</text>
+    <text x="453" y="38">COM3</text><text x="747" y="38">COM4</text>
+  </g>
+</svg>
