@@ -1,0 +1,52 @@
+{
+    "prefix": "line-md",
+    "info": {
+        "name": "Material Line Icons",
+        "total": 1091,
+        "version": "2.0.8",
+        "author": {
+            "name": "Vjacheslav Trushkin",
+            "url": "https://github.com/cyberalien/line-md"
+        },
+        "license": {
+            "title": "MIT",
+            "spdx": "MIT",
+            "url": "https://github.com/cyberalien/line-md/blob/master/license.txt"
+        },
+        "samples": ["loading-twotone-loop", "beer-alt-twotone-loop", "image-twotone", "account", "cloud-off-outline-loop", "cog-filled-loop"],
+        "height": 24,
+        "category": "Material",
+        "tags": ["Precise Shapes", "Has Padding", "Uses Stroke", "Contains Animations"],
+        "palette": false
+    },
+    "lastModified": 1746598136,
+    "icons": {
+        "arrow-open-down": {
+            "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path stroke-dasharray=\"20\" stroke-dashoffset=\"20\" d=\"M3 3l18 0\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" dur=\"0.2s\" values=\"20;0\"/></path><path stroke-dasharray=\"16\" stroke-dashoffset=\"16\" d=\"M12 7l0 13.5\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.3s\" dur=\"0.2s\" values=\"16;0\"/></path><path stroke-dasharray=\"12\" stroke-dashoffset=\"12\" d=\"M12 21l7 -7M12 21l-7 -7\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.5s\" dur=\"0.2s\" values=\"12;0\"/></path></g>"
+        },
+        "arrow-open-up": {
+            "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path stroke-dasharray=\"20\" stroke-dashoffset=\"20\" d=\"M3 21l18 0\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" dur=\"0.2s\" values=\"20;0\"/></path><path stroke-dasharray=\"16\" stroke-dashoffset=\"16\" d=\"M12 17l0 -13.5\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.3s\" dur=\"0.2s\" values=\"16;0\"/></path><path stroke-dasharray=\"12\" stroke-dashoffset=\"12\" d=\"M12 3l7 7M12 3l-7 7\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.5s\" dur=\"0.2s\" values=\"12;0\"/></path></g>"
+        },
+        "confirm-circle": {
+            "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path stroke-dasharray=\"64\" stroke-dashoffset=\"64\" d=\"M3 12c0 -4.97 4.03 -9 9 -9c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9c-4.97 0 -9 -4.03 -9 -9Z\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" dur=\"0.6s\" values=\"64;0\"/></path><path stroke-dasharray=\"14\" stroke-dashoffset=\"14\" d=\"M8 12l3 3l5 -5\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.6s\" dur=\"0.2s\" values=\"14;0\"/></path></g>"
+        },
+        "menu-fold-left": {
+            "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path stroke-dasharray=\"16\" stroke-dashoffset=\"16\" d=\"M19 5h-14\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" dur=\"0.2s\" values=\"16;0\"/></path><path stroke-dasharray=\"10\" stroke-dashoffset=\"10\" d=\"M19 12h-9\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.2s\" dur=\"0.2s\" values=\"10;0\"/></path><path stroke-dasharray=\"16\" stroke-dashoffset=\"16\" d=\"M19 19h-14\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.4s\" dur=\"0.2s\" values=\"16;0\"/></path><path stroke-dasharray=\"10\" stroke-dashoffset=\"10\" d=\"M7 9l-3 3l3 3\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.6s\" dur=\"0.2s\" values=\"10;0\"/></path></g>"
+        },
+        "menu-fold-right": {
+            "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><path stroke-dasharray=\"16\" stroke-dashoffset=\"16\" d=\"M5 5h14\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" dur=\"0.2s\" values=\"16;0\"/></path><path stroke-dasharray=\"10\" stroke-dashoffset=\"10\" d=\"M5 12h9\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.2s\" dur=\"0.2s\" values=\"10;0\"/></path><path stroke-dasharray=\"16\" stroke-dashoffset=\"16\" d=\"M5 19h14\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.4s\" dur=\"0.2s\" values=\"16;0\"/></path><path stroke-dasharray=\"10\" stroke-dashoffset=\"10\" d=\"M17 9l3 3l-3 3\"><animate fill=\"freeze\" attributeName=\"stroke-dashoffset\" begin=\"0.6s\" dur=\"0.2s\" values=\"10;0\"/></path></g>"
+        }
+    },
+    "categories": {
+        "Arrows": ["arrow-open-down", "arrow-open-up"],
+        "Interface": ["confirm-circle"],
+        "Navigation": ["menu-fold-left", "menu-fold-right"]
+    },
+    "suffixes": {
+        "": "Animation On Render",
+        "loop": "Indefinite Animation",
+        "transition": "Transitions Between Icons"
+    },
+    "width": 24,
+    "height": 24
+}

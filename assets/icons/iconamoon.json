@@ -1,0 +1,52 @@
+{
+	"prefix": "iconamoon",
+	"info": {
+		"name": "IconaMoon",
+		"total": 1781,
+		"author": {
+			"name": "Dariush Habibpour",
+			"url": "https://github.com/dariushhpg1/IconaMoon"
+		},
+		"license": {
+			"title": "CC BY 4.0",
+			"spdx": "CC-BY-4.0",
+			"url": "https://creativecommons.org/licenses/by/4.0/"
+		},
+		"samples": [
+			"shield-off-thin",
+			"lightning-1-duotone",
+			"player-previous-fill",
+			"folder-remove-duotone",
+			"frame-bold",
+			"menu-kebab-vertical-circle-light"
+		],
+		"height": 24,
+		"category": "UI 24px",
+		"tags": [
+			"Has Padding",
+			"Uses Stroke"
+		],
+		"palette": false
+	},
+	"lastModified": 1722794093,
+	"icons": {
+        "clock-thin": {
+			"body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><path d=\"M11 8v5h5\"/></g>"
+		}
+    },
+	"aliases": {
+		"General": [
+			"clock-thin"
+		]
+	},
+	"suffixes": {
+		"bold": "Bold",
+		"duotone": "Duotone",
+		"fill": "Fill",
+		"light": "Light",
+		"": "Regular",
+		"thin": "Thin"
+	},
+	"width": 24,
+	"height": 24
+}

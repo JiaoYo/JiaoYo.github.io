@@ -1,0 +1,47 @@
+{
+    "prefix": "ph",
+    "info": {
+        "name": "Phosphor",
+        "total": 9072,
+        "version": "2.1.1",
+        "author": {
+            "name": "Phosphor Icons",
+            "url": "https://github.com/phosphor-icons/core"
+        },
+        "license": {
+            "title": "MIT",
+            "spdx": "MIT",
+            "url": "https://github.com/phosphor-icons/core/blob/main/LICENSE"
+        },
+        "samples": ["folder-open-duotone", "check-square-offset-thin", "pencil-line-fill", "check-thin", "browser-duotone", "thermometer-simple-fill"],
+        "height": 24,
+        "category": "UI Other / Mixed Grid",
+        "tags": ["Has Padding"],
+        "palette": false
+    },
+    "lastModified": 1714973607,
+    "icons": {
+        "sign-out": {
+            "body": "<path fill=\"currentColor\" d=\"M120 216a8 8 0 0 1-8 8H48a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h64a8 8 0 0 1 0 16H56v160h56a8 8 0 0 1 8 8m109.66-93.66l-40-40a8 8 0 0 0-11.32 11.32L204.69 120H112a8 8 0 0 0 0 16h92.69l-26.35 26.34a8 8 0 0 0 11.32 11.32l40-40a8 8 0 0 0 0-11.32\"/>"
+        },
+        "user-circle": {
+            "body": "<path fill=\"currentColor\" d=\"M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24M74.08 197.5a64 64 0 0 1 107.84 0a87.83 87.83 0 0 1-107.84 0M96 120a32 32 0 1 1 32 32a32 32 0 0 1-32-32m97.76 66.41a79.66 79.66 0 0 0-36.06-28.75a48 48 0 1 0-59.4 0a79.66 79.66 0 0 0-36.06 28.75a88 88 0 1 1 131.52 0\"/>"
+        },
+        "caret-double-left-bold": {
+            "body": "<path fill=\"currentColor\" d=\"M208.49 199.51a12 12 0 0 1-17 17l-80-80a12 12 0 0 1 0-17l80-80a12 12 0 0 1 17 17L137 128ZM57 128l71.52-71.51a12 12 0 0 0-17-17l-80 80a12 12 0 0 0 0 17l80 80a12 12 0 0 0 17-17Z\"/>"
+        },
+        "caret-double-right-bold": {
+            "body": "<path fill=\"currentColor\" d=\"m144.49 136.49l-80 80a12 12 0 0 1-17-17L119 128L47.51 56.49a12 12 0 0 1 17-17l80 80a12 12 0 0 1-.02 17m80-17l-80-80a12 12 0 1 0-17 17L199 128l-71.52 71.51a12 12 0 0 0 17 17l80-80a12 12 0 0 0 .01-17Z\"/>"
+        }
+    },
+    "suffixes": {
+        "thin": "Thin",
+        "light": "Light",
+        "": "Regular",
+        "bold": "Bold",
+        "fill": "Fill",
+        "duotone": "Duotone"
+    },
+    "width": 256,
+    "height": 256
+}

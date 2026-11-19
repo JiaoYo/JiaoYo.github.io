@@ -1,0 +1,37 @@
+{
+    "prefix": "ep",
+    "info": {
+        "name": "Element Plus",
+        "total": 293,
+        "version": "2.3.1",
+        "author": {
+            "name": "Element Plus",
+            "url": "https://github.com/element-plus/element-plus-icons"
+        },
+        "license": {
+            "title": "MIT",
+            "spdx": "MIT",
+            "url": "https://github.com/element-plus/element-plus-icons/blob/main/packages/svg/package.json"
+        },
+        "samples": ["home-filled", "partly-cloudy", "avatar", "briefcase", "platform", "flag"],
+        "height": 32,
+        "displayHeight": 16,
+        "category": "UI 16px / 32px",
+        "tags": ["Precise Shapes", "Has Padding"],
+        "palette": false
+    },
+    "lastModified": 1710139697,
+    "icons": {
+        "bottom": {
+            "body": "<path fill=\"currentColor\" d=\"M544 805.888V168a32 32 0 1 0-64 0v637.888L246.656 557.952a30.72 30.72 0 0 0-45.312 0a35.52 35.52 0 0 0 0 48.064l288 306.048a30.72 30.72 0 0 0 45.312 0l288-306.048a35.52 35.52 0 0 0 0-48a30.72 30.72 0 0 0-45.312 0L544 805.824z\"/>"
+        },
+        "monitor": {
+            "body": "<path fill=\"currentColor\" d=\"M544 768v128h192a32 32 0 1 1 0 64H288a32 32 0 1 1 0-64h192V768H192A128 128 0 0 1 64 640V256a128 128 0 0 1 128-128h640a128 128 0 0 1 128 128v384a128 128 0 0 1-128 128zM192 192a64 64 0 0 0-64 64v384a64 64 0 0 0 64 64h640a64 64 0 0 0 64-64V256a64 64 0 0 0-64-64z\"/>"
+        },
+        "top": {
+            "body": "<path fill=\"currentColor\" d=\"M572.235 205.282v600.365a30.118 30.118 0 1 1-60.235 0V205.282L292.382 438.633a28.913 28.913 0 0 1-42.646 0a33.43 33.43 0 0 1 0-45.236l271.058-288.045a28.913 28.913 0 0 1 42.647 0L834.5 393.397a33.43 33.43 0 0 1 0 45.176a28.913 28.913 0 0 1-42.647 0l-219.618-233.23z\"/>"
+        }
+    },
+    "width": 1024,
+    "height": 1024
+}
