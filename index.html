@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="zh-cmn-Hans">
     <head>
-    <meta name="buildTime" content="2026-11-20 16:41:23">
+    <meta name="buildTime" content="2026-11-20 17:16:44">
         <meta charset="UTF-8" />
         <!-- <link rel="icon" href="/favicon.svg" /> -->
         <link rel="icon" href="/assets/logo-Bd6TrsWM.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="color-scheme" content="light dark" />
-        <title>储能云平台</title>
+        <title>PEMS300</title>
         <!-- <style>
         .n-card__content {
             height: calc(100%);
@@ -239,12 +239,59 @@
             --n-item-color-hover: transparent !important;
         }
     </style> -->
+        <script>
+            // 在任何外部脚本之前启动看门狗；入口脚本失败时快速重试，最多两次后显示明确错误。
+            (function () {
+                var KEY = 'app-bootstrap-retry-count';
+                var MAX_RETRIES = 2;
+                var retrying = false;
+
+                function showFailure() {
+                    var status = document.getElementById('app-bootstrap-status');
+                    if (status) status.textContent = '资源加载失败，请刷新页面重试';
+                }
+
+                function retry(force) {
+                    if ((!force && window.__APP_MOUNTED__) || retrying) return;
+
+                    var count = Number(sessionStorage.getItem(KEY) || 0);
+                    if (count >= MAX_RETRIES) {
+                        showFailure();
+                        return;
+                    }
+
+                    retrying = true;
+                    sessionStorage.setItem(KEY, String(count + 1));
+                    var url = new URL(location.href);
+                    url.searchParams.set('_bootstrap_retry', String(Date.now()));
+                    location.replace(url.pathname + url.search + url.hash);
+                }
+
+                window.__APP_BOOTSTRAP_RETRY__ = retry;
+                window.addEventListener(
+                    'error',
+                    function (event) {
+                        var target = event.target;
+                        if (!target || !target.tagName) return;
+
+                        var tagName = target.tagName.toUpperCase();
+                        var rel = String(target.rel || '').toLowerCase();
+                        var critical = tagName === 'SCRIPT' || (tagName === 'LINK' && /stylesheet|modulepreload/.test(rel));
+                        if (critical) setTimeout(retry, 300);
+                    },
+                    true,
+                );
+                setTimeout(retry, 15000);
+            })();
+        </script>
         <script src="/decimal.js"></script>
-      <script type="module" crossorigin src="/assets/index-Bwr9w9yx.js"></script>
-      <link rel="stylesheet" crossorigin href="/assets/index-B2dMiwQb.css">
+      <script type="module" crossorigin src="/assets/index-B_xhLuwJ.js"></script>
+      <link rel="stylesheet" crossorigin href="/assets/index-DdpSfKms.css">
     </head>
 
     <body>
-        <div id="app"></div>
+        <div id="app">
+            <div id="app-bootstrap-status" style="display: flex; height: 100vh; align-items: center; justify-content: center; color: #334155; background: #f6f9f8">系统加载中...</div>
+        </div>
     </body>
 </html>
