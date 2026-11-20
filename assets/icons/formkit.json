@@ -1,0 +1,29 @@
+{
+    "prefix": "formkit",
+    "info": {
+        "name": "FormKit Icons",
+        "total": 144,
+        "author": {
+            "name": "FormKit, Inc",
+            "url": "https://github.com/formkit/formkit/tree/master/packages/icons"
+        },
+        "license": {
+            "title": "MIT",
+            "spdx": "MIT",
+            "url": "https://github.com/formkit/formkit/blob/master/packages/icons/LICENSE"
+        },
+        "samples": ["checkbox", "reorder", "submit", "check", "radio", "close"],
+        "category": "UI 16px / 32px",
+        "tags": ["Precise Shapes"],
+        "palette": false
+    },
+    "lastModified": 1712643767,
+    "icons": {
+        "group": {
+            "body": "<path fill=\"currentColor\" d=\"M8 8.5c-.08 0-.15-.02-.22-.05L1.28 5.2a.5.5 0 0 1 0-.9l6.5-3.25c.14-.07.31-.07.45 0l6.5 3.25a.5.5 0 0 1 0 .9l-6.5 3.25c-.07.04-.15.05-.22.05ZM2.62 4.75L8 7.44l5.38-2.69L8 2.06z\"/><path fill=\"currentColor\" d=\"M8 11.75c-.08 0-.15-.02-.22-.05l-6.5-3.25a.5.5 0 0 1 0-.9l3.25-1.62c.25-.12.55-.02.67.22c.12.25.02.55-.22.67L2.62 8L8 10.69L13.38 8l-2.36-1.18a.49.49 0 0 1-.22-.67c.12-.25.42-.35.67-.22l3.25 1.62a.5.5 0 0 1 0 .9l-6.5 3.25c-.07.04-.15.05-.22.05\"/><path fill=\"currentColor\" d=\"M8 15c-.08 0-.15-.02-.22-.05l-6.5-3.25a.5.5 0 0 1 0-.9l3.25-1.62c.25-.12.55-.02.67.22c.12.25.02.55-.22.67l-2.36 1.18L8 13.94l5.38-2.69l-2.36-1.18a.49.49 0 0 1-.22-.67c.12-.25.42-.35.67-.22l3.25 1.62a.5.5 0 0 1 0 .9l-6.5 3.25c-.07.04-.15.05-.22.05\"/>"
+        },
+        "password": {
+            "body": "<path fill=\"currentColor\" d=\"M13.35 16H2.65C1.74 16 1 15.26 1 14.35v-7.7C1 5.74 1.74 5 2.65 5h10.7c.91 0 1.65.74 1.65 1.65v7.69c0 .91-.74 1.65-1.65 1.65ZM2.65 6c-.36 0-.65.29-.65.65v7.69c0 .36.29.65.65.65h10.7c.36 0 .65-.29.65-.65V6.65c0-.36-.29-.65-.65-.65z\"/><path fill=\"currentColor\" d=\"M12.54 6H3.46V4.54C3.46 2.04 5.5 0 8 0s4.54 2.04 4.54 4.54zM4.46 5h7.08v-.46C11.54 2.59 9.95 1 8 1S4.46 2.59 4.46 4.54z\"/><circle cx=\"12\" cy=\"10.5\" r=\"1\" fill=\"currentColor\"/><circle cx=\"8\" cy=\"10.5\" r=\"1\" fill=\"currentColor\"/><circle cx=\"4\" cy=\"10.5\" r=\"1\" fill=\"currentColor\"/>"
+        }
+    }
+}

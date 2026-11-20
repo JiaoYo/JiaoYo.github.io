@@ -1,0 +1,52 @@
+{
+    "prefix": "hugeicons",
+    "info": {
+        "name": "Huge Icons",
+        "total": 4151,
+        "author": {
+            "name": "Hugeicons",
+            "url": "https://icon-sets.iconify.design/icon-sets/hugeicons/"
+        },
+        "license": {
+            "title": "MIT",
+            "spdx": "MIT"
+        },
+        "samples": ["analytics-up", "android", "search-02", "tick-02", "not-equal-sign", "text-align-left-01"],
+        "height": 24,
+        "category": "UI 24px",
+        "tags": ["Precise Shapes", "Has Padding", "Uses Stroke"],
+        "palette": false
+    },
+    "lastModified": 1734765426,
+    "icons": {
+        "ai-computer": {
+            "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" color=\"currentColor\"><path d=\"M10.014 2c-3.778 0-5.667 0-6.84 1.172S2 6.229 2 10s0 5.657 1.174 6.828S6.236 18 10.014 18h4.007c3.778 0 5.667 0 6.84-1.172c.81-.808 1.061-1.956 1.139-3.828m-10 5v4m-4 0h8m-5-7h2\"/><path d=\"M18 4h-2c-.943 0-1.414 0-1.707.293S14 5.057 14 6v2c0 .943 0 1.414.293 1.707S15.057 10 16 10h2c.943 0 1.414 0 1.707-.293S20 8.943 20 8V6c0-.943 0-1.414-.293-1.707S18.943 4 18 4m-2.5 6v2m3-2v2m-3-10v2m3-2v2M14 5.5h-2m2 3h-2m10-3h-2m2 3h-2\"/></g>"
+        },
+        "align-selection": {
+            "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M20 6v12M18 4H6m12 16H6m-2-2V6m18-2a2 2 0 1 1-4 0a2 2 0 0 1 4 0M6 4a2 2 0 1 1-4 0a2 2 0 0 1 4 0m16 16a2 2 0 1 1-4 0a2 2 0 0 1 4 0M6 20a2 2 0 1 1-4 0a2 2 0 0 1 4 0\" color=\"currentColor\"/>"
+        },
+        "audit-01": {
+            "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" color=\"currentColor\"><path d=\"M19 10.5V10c0-3.771 0-5.657-1.172-6.828S14.771 2 11 2S5.343 2 4.172 3.172S3 6.229 3 10v6c0 1.864 0 2.796.304 3.53a4 4 0 0 0 2.165 2.165C6.204 22 7.136 22 9 22M7 7h8m-8 4h4\"/><path d=\"M15.283 19.004c-.06-.888-.165-1.838-.601-2.912c-.373-.916-.269-3.071 1.818-3.071s2.166 2.155 1.794 3.07c-.436 1.075-.518 2.025-.576 2.913M21 22h-9v-1.246c0-.446.266-.839.653-.961l2.255-.716q.242-.077.494-.077h2.196q.252 0 .494.077l2.255.716c.387.122.653.515.653.961z\"/></g>"
+        },
+        "chart-ring": {
+            "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" color=\"currentColor\"><path d=\"M9 9L5 5m11 7h6m-10 4v6\"/><circle cx=\"12\" cy=\"12\" r=\"4\"/><circle cx=\"12\" cy=\"12\" r=\"10\"/></g>"
+        },
+        "clock-04": {
+            "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" color=\"currentColor\"><path d=\"M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2C7.522 2 3.774 4.943 2.5 9H5\"/><path d=\"M12 8v4l2 2M2 12q0 .505.045 1M9 22a10 10 0 0 1-1-.392M3.21 17a11 11 0 0 1-.515-1.154m2.136 3.46q.46.495.977.923\"/></g>"
+        },
+        "cloud-upload": {
+            "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M17.478 9.011h.022c2.485 0 4.5 2.018 4.5 4.508c0 2.32-1.75 4.232-4 4.481m-.522-8.989q.021-.248.022-.5A5.505 5.505 0 0 0 12 3a5.505 5.505 0 0 0-5.48 5.032m10.958.98a5.5 5.5 0 0 1-1.235 3.005M6.52 8.032A5.006 5.006 0 0 0 2 13.018a5.01 5.01 0 0 0 4 4.91m.52-9.896q.237-.023.48-.023c1.126 0 2.165.373 3 1.002M12 13v8m0-8c-.7 0-2.008 1.994-2.5 2.5M12 13c.7 0 2.008 1.994 2.5 2.5\" color=\"currentColor\"/>"
+        },
+        "computer": {
+            "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M14 2h-4c-3.28 0-4.919 0-6.081.814a4.5 4.5 0 0 0-1.105 1.105C2 5.08 2 6.72 2 10s0 4.919.814 6.081a4.5 4.5 0 0 0 1.105 1.105C5.08 18 6.72 18 10 18h4c3.28 0 4.919 0 6.081-.814a4.5 4.5 0 0 0 1.105-1.105C22 14.92 22 13.28 22 10s0-4.919-.814-6.081a4.5 4.5 0 0 0-1.105-1.105C18.92 2 17.28 2 14 2m-3 13h2m1.5 7l-.316-.419c-.71-.944-.887-2.387-.437-3.581M9.5 22l.316-.419c.71-.944.887-2.387.437-3.581M7 22h10\" color=\"currentColor\"/>"
+        },
+        "repair": {
+            "body": "<g fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" color=\"currentColor\"><path d=\"M11 11L6 6M5 7.5L7.5 5l-3-1.5l-1 1zm14.975 1.475a3.5 3.5 0 0 0 .79-3.74l-1.422 1.422h-2v-2l1.422-1.422a3.5 3.5 0 0 0-4.529 4.53l-6.47 6.471a3.5 3.5 0 0 0-4.53 4.529l1.421-1.422h2v2l-1.422 1.422a3.5 3.5 0 0 0 4.53-4.528l6.472-6.472a3.5 3.5 0 0 0 3.738-.79\"/><path d=\"m11.797 14.5l5.604 5.604a1.35 1.35 0 0 0 1.911 0l.792-.792a1.35 1.35 0 0 0 0-1.911L14.5 11.797\"/></g>"
+        },
+        "subtitle": {
+            "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.5\" d=\"M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12M18 18h-8m8-4h-3m-3 0h-2\" color=\"currentColor\"/>"
+        }
+    },
+    "width": 24,
+    "height": 24
+}

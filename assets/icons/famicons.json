@@ -1,0 +1,35 @@
+{
+    "prefix": "famicons",
+    "info": {
+        "name": "Famicons",
+        "total": 1342,
+        "author": {
+            "name": "Family",
+            "url": "https://github.com/familyjs/famicons"
+        },
+        "license": {
+            "title": "MIT",
+            "spdx": "MIT",
+            "url": "https://github.com/familyjs/famicons/blob/main/LICENSE"
+        },
+        "samples": ["backspace-outline", "home-sharp", "bluetooth-outline", "glasses-sharp", "resize", "funnel-sharp"],
+        "height": 32,
+        "displayHeight": 16,
+        "category": "UI 16px / 32px",
+        "tags": ["Precise Shapes", "Has Padding"],
+        "palette": false
+    },
+    "lastModified": 1735332423,
+    "icons": {
+        "archive-outline": {
+            "body": "<path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\" d=\"M80 152v256a40.12 40.12 0 0 0 40 40h272a40.12 40.12 0 0 0 40-40V152\"/><rect width=\"416\" height=\"80\" x=\"48\" y=\"64\" fill=\"none\" stroke=\"currentColor\" stroke-linejoin=\"round\" stroke-width=\"32\" rx=\"28\" ry=\"28\"/><path fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"32\" d=\"m320 304l-64 64l-64-64m64 41.89V224\"/>"
+        }
+    },
+    "suffixes": {
+        "outline": "Outline",
+        "sharp": "Sharp",
+        "": "Filled"
+    },
+    "width": 512,
+    "height": 512
+}
