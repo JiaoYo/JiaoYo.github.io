@@ -1,0 +1,1 @@
+import{cb as e}from"./index-Bwr9w9yx.js";function r(t){return e({url:"/sys/log/login/page",method:"get",params:t})}function g(t){return e({url:"/sys/log/operation/page",method:"get",params:t})}function s(t){return e({url:"/sys/log/error/page",method:"get",params:t})}export{r as a,g as b,s as f};
