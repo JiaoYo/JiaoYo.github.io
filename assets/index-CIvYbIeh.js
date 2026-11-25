@@ -1,1 +1,0 @@
-import{d as e,c as n,o as t,t as o,u as a,$ as i}from"./index-BzZargB0.js";const c=e({name:"equipmentmonitoring",__name:"index",setup(r){return(s,p)=>(t(),n("div",null,o(a(i)("page.equipmentMonitoring.title")),1))}});export{c as default};
